@@ -1,0 +1,40 @@
+This flyer is released under the terms of the GNU GPL:
+
+   Copyright (c) 2000,2002 Software in the Public Interest, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; version 2 dated June, 1991.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program;  if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
+
+Please find the entire GNU General Public License at
+<http://www.gnu.org/copyleft/gpl.html>
+
+This license does not apply for the files swirl.eps, debian.eps and
+sponsor logos in the sponsors/ directory (to be added on demand when a
+company sponsors printing of a flyer) for which the following licenses
+apply:
+
+swirl.eps and debian.eps
+
+   Copyright (c) 1999 Software in the Public Interest, Inc.
+
+   Debian Open Use Logo License
+
+   This logo or a modified version may be used by anyone to refer to
+   the Debian project, but does not indicate endorsement by the project.
+
+   It is not required, but we would appreciate, that when used on a
+   web page, the image be a link to <http://www.debian.org/>.
+
+sponsors/credativ.eps
+
+   Please refer to Michael Meskes <Michael.Meskes@credativ.de>
