@@ -8,20 +8,21 @@
 \def\Descriptionsymbol{\item[\hspace{-\Separation}\textcolor{debianred}{$\blacksquare$}\hspace{.5\Separation}}
 \definecolor{debianred}{rgb}{0.843137,0.027451,0.317647}
 
-\def\Sponsor{
+\def\Sponsor{%
 \vspace*{\stretch{1}}
-\hspace{\Separation}
-\MadeWith
-\hfill
-\begin{minipage}{.4\textwidth}
-\raggedleft
-\SponsoredBy\\
-\expandafter\boxurl\SponsorURL
-\end{minipage}
-\begin{minipage}{.08\textwidth}
-\vspace{-1cm}
-\includegraphics[width=\textwidth]{\SponsorLogo}
-\end{minipage}
+\vspace*{-14mm}
+\hbox to\textwidth{%
+  \hbox to0.44\textwidth{%
+    \null\hspace{\Separation} \MadeWith \hfill}
+  \hfil%
+  \parbox{0.40\textwidth}{\raggedleft%
+      \SponsoredBy \\
+      \expandafter\boxurl\SponsorURL
+  }
+  \hspace*{0.5\Separation}\null
+  \lower8.5pt\hbox{\includegraphics[width=0.1\textwidth]{\SponsorLogo}}
+}
+\vspace*{1mm}
 }
 
 \raggedleft
@@ -40,9 +41,9 @@
 \hspace{-\Separation}%
 \smash{\rule[-\textheight]{1pt}{\textheight}}%
 \hspace{-1pt}%
+\rule{1.04\textwidth}{1pt}%
 % Beware, below is a hack (tm). It might be better to use a
 % \begin{picture}(0,0) construct to draw the lines around the text
-\rule{1.04\textwidth}{1pt}%
 \hbox to0pt{\raise1pt\vbox to0pt{\rule{1pt}{\textheight}%
 \hskip-1.04\textwidth\rule[-1pt]{1.04\textwidth}{1pt}\rule[-1pt]{0.4pt}{1pt}%
 \vss}\hss}%
@@ -116,3 +117,4 @@
 \end{minipage}
 
 \Sponsor
+
