@@ -1,12 +1,28 @@
 %% Layout for a Debian Flyer
-%% By Jens Schmalzing<jensen@debian.org> and 
-%% Michael Banck<mbanck@debian.org>
+%% By Jens Schmalzing <jensen@debian.org> and 
+%% Michael Banck <mbanck@debian.org>
 
 % some definitions, for brevity
 \setlength{\Separation}{.02\textwidth}
 \def\Itemizesymbol{\item[\textcolor{debianred}{$\blacktriangleright$}]}
 \def\Descriptionsymbol{\item[\hspace{-\Separation}\textcolor{debianred}{$\blacksquare$}\hspace{.5\Separation}}
 \definecolor{debianred}{rgb}{0.843137,0.027451,0.317647}
+
+\def\Sponsor{
+\vspace*{\stretch{1}}
+\hspace{\Separation}
+\MadeWith
+\hfill
+\begin{minipage}{.4\textwidth}
+\raggedleft
+\SponsoredBy\\
+\boxurl{\SponsorURL}
+\end{minipage}
+\begin{minipage}{.08\textwidth}
+\vspace{-1cm}
+\includegraphics[width=\textwidth]{\SponsorLogo}
+\end{minipage}
+}
 
 \raggedleft
 
