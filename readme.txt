@@ -38,3 +38,16 @@ Please use the Makefile which provides several targets for you:
   make clean
 
        Cleans up the directory, removes all compiled files.
+
+Adding a translation
+--------------------
+
+To add a new translation to this general flyer, copy english.txt into
+language.tex, where "language" is the local name of your language
+(i.e. francaise for french, deutsch for german etc.).  Please add the
+file to this directory (e.g. by sending a mail to joey@debian.org).
+
+When you add a new translation, please be careful with the size of
+your translation.  If the text is too long, an empty page is inserted
+by LaTeX and the text doesn't fit on the page.  In such a case, please
+shorten the translation somehow without changing the meaning too much.
