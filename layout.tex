@@ -1,0 +1,97 @@
+%% Layout for a Debian Flyer
+%% By Jens Schmalzing<jensen@debian.org> and 
+%% Michael Banck<mbanck@debian.org>
+
+% some definitions, for brevity
+\setlength{\Separation}{.02\textwidth}
+\def\Itemizesymbol{\item[\textcolor{debianred}{$\blacktriangleright$}]}
+\def\Descriptionsymbol{\item[\hspace{-\Separation}\textcolor{debianred}{$\blacksquare$}\hspace{.5\Separation}}
+\definecolor{debianred}{rgb}{0.843137,0.027451,0.317647}
+
+\raggedleft
+
+% a tiny minipage for the background swirl
+\begin{minipage}{.01\textwidth}
+\includegraphics[width=100.\textwidth]{swirl}
+\end{minipage}
+%
+\hfill
+%
+% another minipage for everything else
+\begin{minipage}{.98\textwidth}
+%
+% some rules around the text
+\hspace{-\Separation}%
+\smash{\rule[-\textheight]{1pt}{\textheight}}%
+\hspace{-1pt}%
+\rule{1.04\textwidth}{1pt}
+
+\vspace*{\Separation}
+%
+\begin{minipage}{.39\textwidth}
+\resizebox*{\textwidth}{!}{\colorbox{debianred}{\color{white}\bf \WhatIsDebianCaption}}
+
+\vspace*{\Separation}
+
+\WhatIsDebian
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}{.59\textwidth}
+\includegraphics[width=\textwidth]{debian} \\[1ex]
+\resizebox*{\textwidth}{!}{\bf \Universal}
+\end{minipage}
+
+\vspace*{\Separation}
+
+\hspace{-\Separation}%
+\rule{1.04\textwidth}{1pt}
+
+\vspace*{\Separation}
+
+\begin{minipage}[t]{.44\textwidth}
+%
+\begin{description}\itemsep0cm
+\Descriptionsymbol\FreedomCaption] \Freedom
+\Descriptionsymbol\CommunityCaption] \Community
+\Descriptionsymbol\ContinuityCaption] \Continuity
+\Descriptionsymbol\StabilityCaption] \Stability
+\Descriptionsymbol\PortabilityCaption] \Portability
+\end{description}
+%
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.54\textwidth}
+%
+\colorbox{debianred}{\textcolor{white}{\bf\Large \IncludedCaption}}
+
+\vspace*{\Separation}
+
+\Included
+\begin{itemize}\itemsep0cm
+\Itemizesymbol\Utilities
+\Itemizesymbol\Networking
+\Itemizesymbol\Programming
+\Itemizesymbol\Windowsystem
+\Itemizesymbol\Documents
+\Itemizesymbol\Graphics
+\Itemizesymbol\Office
+\Itemizesymbol\Databases
+\end{itemize}
+%
+\colorbox{debianred}{\textcolor{white}{\bf\Large \KnowMoreCaption}}
+
+\vspace*{\Separation}
+
+\KnowMore
+
+\Install
+
+\end{minipage}
+
+\end{minipage}
+
+\Sponsor
