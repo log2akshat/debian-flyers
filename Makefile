@@ -1,8 +1,10 @@
 base = flyer
+lang1 = english
+lang2 = deutsch
 
 export TEXINPUTS=./sponsors:
 
-$(base).dvi: $(base).tex
+$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex
 	latex $(base)
 
 $(base).ps: $(base).tex
