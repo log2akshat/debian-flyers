@@ -19,7 +19,6 @@
 #
 lang1 = english
 lang2 = deutsch
-lang2 = portugues
 #
 # End Configuration ----------------------------------------
 
