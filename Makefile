@@ -1,10 +1,18 @@
-base = flyer
+# Begin Configuration ----------------------------------------
+#
+#  Please add the native names for the languages you would like to use
+#
 lang1 = english
 lang2 = deutsch
+#
+# End Configuration ----------------------------------------
+
+base = flyer
 
 export TEXINPUTS=./sponsors:
 
-$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex
+$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex preamble.tex
+	./mkconfig $(lang1) $(lang2)
 	latex $(base)
 
 $(base).ps: $(base).tex

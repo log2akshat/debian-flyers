@@ -1,0 +1,30 @@
+#! /bin/sh
+
+# Converts native language names into english ones and configures the files
+
+if [ $# -lt 2 ]
+then
+    echo "Not enough parameters given"
+    exit
+fi
+
+english()
+{
+    lang=$1; shift
+
+    case $lang in
+    deutsch)	echo "german";;
+    english)	echo "english";;
+    nederlands)	echo "dutch";;
+    svenska)	echo "swedish";;
+    esac
+}
+
+echo "% This file is written automatically by mkconfig" > config.tex
+echo >> config.tex
+
+printf '\\newcommand{\\firstlang}{%s}\n' $1 >> config.tex
+printf '\\newcommand{\\firstbabel}{%s}\n' `english $1` >> config.tex
+echo >> config.tex
+printf '\\newcommand{\\secondlang}{%s}\n' $2 >> config.tex
+printf '\\newcommand{\\secondbabel}{%s}\n' `english $2` >> config.tex
