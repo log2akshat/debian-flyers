@@ -27,12 +27,15 @@ texfiles = preamble.tex layout.tex
 langfiles = deutsch.tex italiano.tex nederlands.tex english.tex \
 	francaise.tex portugues.tex svenska.tex dansk.tex
 
-.SUFFIXES:	.ps .dvi
+.SUFFIXES:	.ps .pdf .dvi
 
 export TEXINPUTS=./sponsors:
 
 .dvi.ps:
 	dvips $*
+
+.dvi.pdf:
+	dvipdf $*
 
 $(base).ps:
 
@@ -62,7 +65,9 @@ $(base).png: $(base).ps
 720dpi: $(base).dvi
 	dvips -D 720 -o $(base)-720dpi.ps $(base)
 
-# Requires aurora.pro from CTAN
+# Requires aurora.pro from CTAN: http://www.ctan.org/tex-archive/support/aurora/
+# Aurora.pro is not free software, and therefore not in Debian main.  If you
+# dislike this, try colorsep.pro.
 #
 cmyk300: $(base).dvi
 	dvips -D 300 -h aurora.pro -h magenta.pro -o $(base)-300dpi-magenta.ps $(base)
@@ -75,6 +80,16 @@ cmyk600: $(base).dvi
 	dvips -D 600 -h aurora.pro -h yellow.pro -o $(base)-600dpi-yellow.ps $(base)
 	dvips -D 600 -h aurora.pro -h cyan.pro -o $(base)-600dpi-cyan.ps $(base)
 	dvips -D 600 -h aurora.pro -h black.pro -o $(base)-600dpi-black.ps $(base)
+
+cmyk600pdf: cmyk600
+	ps2pdf $(base)-600dpi-magenta.ps $(base)-600dpi-magenta.pdf
+	ps2pdf $(base)-600dpi-yellow.ps $(base)-600dpi-yellow.pdf
+	ps2pdf $(base)-600dpi-cyan.ps $(base)-600dpi-cyan.pdf
+	ps2pdf $(base)-600dpi-black.ps $(base)-600dpi-black.pdf
+
+#
+# housekeeping targets
+#
 
 upload: clean
 	$(MAKE) $(base).ps
