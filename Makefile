@@ -44,6 +44,9 @@ $(base).png: $(base).ps
 600dpi: $(base).dvi
 	dvips -D 600 -o $(base)-600dpi.ps $(base)
 
+720dpi: $(base).dvi
+	dvips -D 720 -o $(base)-720dpi.ps $(base)
+
 # Requires aurora.pro from CTAN
 #
 cmyk300: $(base).dvi
