@@ -13,6 +13,7 @@ english()
     lang=$1; shift
 
     case $lang in
+    dansk)	echo "danish";;
     deutsch)	echo "german";;
     english)	echo "english";;
     francaise)	echo "french";;

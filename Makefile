@@ -25,7 +25,7 @@ lang2 = deutsch
 base = flyer
 texfiles = preamble.tex layout.tex
 langfiles = deutsch.tex italiano.tex nederlands.tex english.tex \
-	francaise.tex portugues.tex svenska.tex
+	francaise.tex portugues.tex svenska.tex dansk.tex
 
 .SUFFIXES:	.ps .dvi
 
