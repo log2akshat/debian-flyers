@@ -63,6 +63,7 @@ cmyk600: $(base).dvi
 
 upload: clean
 	$(MAKE) $(base).ps
+	-rm -f $(base).{eps,dvi,aux,log}
 	rsync -e ssh -va --exclude CVS/ --delete ./ klecker.debian.org:/org/www.debian.org/events-materials/flyers/general/
 
 clean:
