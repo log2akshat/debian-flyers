@@ -21,6 +21,11 @@ Please use the Makefile which provides several targets for you:
 
        Compiles the flyer with both languages set in the Makefile.
 
+  make lang1=nederlands lang2=english flyer.ps
+
+       Compiles the flyer, using nederlands for language on front
+       page, and english for language on back page.
+
   make flyer.jpg
 
        Compils the flyer like with flyer.ps and copies the first page
