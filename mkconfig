@@ -15,6 +15,7 @@ english()
     case $lang in
     deutsch)	echo "german";;
     english)	echo "english";;
+    italiano)	echo "italian";;
     nederlands)	echo "dutch";;
     svenska)	echo "swedish";;
     esac
