@@ -24,8 +24,11 @@ lang2 = deutsch
 
 base = flyer
 texfiles = preamble.tex layout.tex
-langfiles = deutsch.tex italiano.tex nederlands.tex english.tex \
-	francaise.tex portugues.tex svenska.tex dansk.tex
+origfile = english.tex
+transfiles = deutsch.tex italiano.tex nederlands.tex francaise.tex \
+	portugues.tex svenska.tex dansk.tex
+
+langfiles = $(origfile) $(transfiles)
 
 .SUFFIXES:	.ps .pdf .dvi
 
@@ -90,6 +93,10 @@ cmyk600pdf: cmyk600
 #
 # housekeeping targets
 #
+
+# check up-to-dateness of translations
+check:
+	@for l in $(transfiles); do ./translation-check.pl $$l; done
 
 upload: clean
 	$(MAKE) $(base).ps

@@ -1,9 +1,7 @@
-# $Id: TODO,v 1.3 2005/02/27 11:48:35 joostvb Exp $
+# $Id: TODO,v 1.4 2005/02/27 18:11:29 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/TODO,v $
 
 - Get dansk.tex, italiano.tex, portugues.tex, svenska.tex updated
-- Document the "translation-check" mechanism (uses english.tex CVS Id).
-  A "check" make-target would be nice.
 - Get http://alioth.debian.org/projects/debian-flyers/ linked to from
   http://www.nl.debian.org/events/material#flyers (a link
   to Jaldhar H. Vyas's DocBook XML leaflet on
