@@ -1,4 +1,4 @@
-# $Id: NEWS,v 1.1 2005/02/01 07:15:52 joostvb Exp $
+# $Id: NEWS,v 1.2 2005/02/01 07:32:20 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/NEWS,v $
 
 debian-flyers/general NEWS file
@@ -10,24 +10,8 @@ debian-flyers/general NEWS file
 - Changes made in september 2004:
 
   * english.tex:
-  Summary of changes in english.tex between CVS version 1.11 ( 2004-08-25
-  08:37:14 +0000 ) and 2004-09-08 version:
-  Updated by Joost van Baal.  Proofread by Guus Sliepen.
-  - Do not explain what a kernel is
-  - s/more than 9,500 packages/more than 10,000 packages/
-  - Move list of supported arches to WhatIsDebian section
-  - Mention nof developers only once
-  - Don't mention social contract url
-  - Don't mention Open Source Definition
-  - Remove Community section header
-  - Move statement on market pressure from Stability to new Quality section
-  - New Security section: talk about secure defaults, and about security team
-  - Remove Portability section header
-  - New Quality section: talk about policy manual, bts
-  - Don't mention EtherTalk and Novell network protocols
-  - Mention inofficial user fora (we are thinking debiannewbies, debianhelp,
-    local lugs etc.)
-  - Mention one can burn ones own cd
+  See CVS log for summary of changes in english.tex between CVS version 1.11
+  ( 2004-08-25 08:37:14 +0000 ) and 2004-09-08 version.
 
   * francaise.tex:
   Patches from
