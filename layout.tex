@@ -16,7 +16,7 @@
 \begin{minipage}{.4\textwidth}
 \raggedleft
 \SponsoredBy\\
-\boxurl{\SponsorURL}
+\expandafter\boxurl\SponsorURL
 \end{minipage}
 \begin{minipage}{.08\textwidth}
 \vspace{-1cm}
@@ -40,7 +40,12 @@
 \hspace{-\Separation}%
 \smash{\rule[-\textheight]{1pt}{\textheight}}%
 \hspace{-1pt}%
-\rule{1.04\textwidth}{1pt}
+% Beware, below is a hack (tm). It might be better to use a
+% \begin{picture}(0,0) construct to draw the lines around the text
+\rule{1.04\textwidth}{1pt}%
+\hbox to0pt{\raise1pt\vbox to0pt{\rule{1pt}{\textheight}%
+\hskip-1.04\textwidth\rule[-1pt]{1.04\textwidth}{1pt}\rule[-1pt]{0.4pt}{1pt}%
+\vss}\hss}%
 
 \vspace*{\Separation}
 %
