@@ -1,4 +1,4 @@
-# $Id: TODO,v 1.4 2005/02/27 18:11:29 joostvb Exp $
+# $Id: TODO,v 1.5 2005/02/27 19:49:36 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/TODO,v $
 
 - Get dansk.tex, italiano.tex, portugues.tex, svenska.tex updated
@@ -6,3 +6,7 @@
   http://www.nl.debian.org/events/material#flyers (a link
   to Jaldhar H. Vyas's DocBook XML leaflet on
   http://alioth.debian.org/projects/debianintro/ would be nice too.)
+- Would it be a good idea to upload typesetted flyers (and perhaps
+  sources) to haydn:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers
+  / ftp://debian-flyers.alioth.debian.org/pub/debian-flyers/ , and
+  have http://www.debian.org/events/materials/flyers/general/ link to there?
