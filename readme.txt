@@ -3,14 +3,17 @@ publically available.
 
 Through the web:
 
-  http://cvs.infodrom.org/goodies/flyers/general/?cvsroot=debian
+  http://cvs.alioth.debian.org/cgi-bin/cvsweb.cgi/?cvsroot=debian-flyers
 
-Through anonymous CVS:
+Through read/write CVS (if you have an Alioth account in the debian-flyers group)
 
-  cvs -d :pserver:anonymous@cvs.infodrom.org:/var/cvs/debian login
-  [Enter]
+   cvs -d :ext:<username>@alioth.debian.org:/cvsroot/debian-flyers co general
 
-  cvs -d :pserver:anonymous@cvs.infodrom.org:/var/cvs/debian co -d flyer goodies/flyers/general
+Through anonymous read-only CVS:
+
+   cvs -d:pserver:anonymous@cvs.alioth.debian.org:/cvsroot/debian-flyers login
+   <enter>
+   cvs -z3 -d:pserver:anonymous@cvs.alioth.debian.org:/cvsroot/debian-flyers co general
 
 Compiling the flyer
 -------------------
@@ -56,3 +59,11 @@ When you add a new translation, please be careful with the size of
 your translation.  If the text is too long, an empty page is inserted
 by LaTeX and the text doesn't fit on the page.  In such a case, please
 shorten the translation somehow without changing the meaning too much.
+
+
+See also
+--------
+
+http://debian-flyers.alioth.debian.org/
+
+
