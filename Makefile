@@ -80,6 +80,7 @@ upload: clean
 	$(MAKE) $(base).ps
 	-rm -f $(base).{eps,dvi,aux,log}
 	rsync -e ssh -va --exclude CVS/ --delete ./ klecker.debian.org:/org/www.debian.org/events-materials/flyers/general/
+	ssh klecker "cd /org/www.debian.org/events-materials/flyers/general && chgrp -R webwml * && chmod -R g+w *"
 
 clean:
 	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
