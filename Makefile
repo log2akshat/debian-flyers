@@ -8,15 +8,27 @@ lang2 = deutsch
 # End Configuration ----------------------------------------
 
 base = flyer
+texfiles = preamble.tex layout.tex
+langfiles = deutsch.tex italiano.tex nederlands.tex english.tex \
+	francaise.tex portugues.tex svenska.tex
+
+.SUFFIXES:	.ps .dvi
 
 export TEXINPUTS=./sponsors:
 
-$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex preamble.tex layout.tex
-	./mkconfig $(lang1) $(lang2)
-	latex $(base)
+.dvi.ps:
+	dvips $*
 
-$(base).ps: $(base).dvi
-	dvips $(base)
+$(base).ps:
+
+all.dvi: all.tex $(texfiles) $(langfiles)
+	echo -n > config.tex
+	latex all
+
+$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex $(texfiles) Makefile
+	./mkconfig $(lang1) $(lang2)
+	rm $(base).aux
+	latex $(base)
 
 $(base).jpg: $(base).ps
 	gs -dBATCH -dNOPAUSE -sDEVICE=jpeg -sPAPERSIZE=a4 -sOutputFile=$(base).jpg $(base).ps
