@@ -13,8 +13,6 @@
 %   along with this program;  if not, write to the Free Software
 %   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
 
-% Updated august 2004 by Joost van Baal <joostvb@debian.org>
-
 \selectlanguage{english}
 
 \def\Universal{The Universal Operating System}
@@ -23,14 +21,13 @@
 
 \def\WhatIsDebian{
 %
-Debian is a free operating system (OS) for your computer. An operating
-system is the set of basic programs and utilities that make your
-computer run. At the core of every operating system is the kernel.  It
-is the most fundamental program on the computer: it does all the basic
-housekeeping and lets you start other programs. Debian is currently
-based on the Linux kernel and includes more than 9,500 packages of
-utilities and applications. Almost 1,000 developers are working hard
-to maintain Debian's high quality.
+Debian is a free operating system for your computer.  Debian is currently
+based on the Linux kernel and includes more than 10,000 packages of
+utilities and applications.  This is far more software than is available for any other
+Free operating system.  Many architectures are supported,
+including Intel x86, Intel IA-64, Alpha, Motorola 68k, PowerPC and Sun SPARC.
+Almost 1,000 volunteer developers are working on maintaining Debian's high
+quality.
 %
 }
 
@@ -38,31 +35,11 @@ to maintain Debian's high quality.
 
 \def\Freedom{
 %
-Debian is comprised entirely of Free Software.  By Free Software, we
+As stated in the Debian Social Contract Debian is comprised entirely of
+Free Software.  By Free Software, we
 don't just mean zero cost, but also the Freedom to use it how and where you
 want, share it with your friends, read and modify the source code, and
-distribute those changes to other people.  This means Debian can be
-used with no limitations - even in commercial environments!  Debian is
-the largest collection of ready-to-install Free Software on the Internet.
-%
-}
-
-\def\CommunityCaption{Community}
-
-\def\Community{
-%
-The Debian project is a 100\% volunteer effort aiming at producing
-a world class Open Source operating system. There are currently about
-1,000 people from around the world developing the Debian
-system, each with roles ranging from package development through
-quality assurance, security, policy, and strategy. The Debian project
-is engaged to the principles of software freedom and openness. Its
-commitment is plainly stated in the Debian Social Contract published
-at
-\boxurl{http://www.debian.org/social_contract}. The Debian Free Software
-Guidelines describe the criteria that licenses for software included
-in the Debian operating system must meet. The Open Source Definition
-is a derived work of the Debian Free Software Guidelines. 
+distribute those changes to other people.
 %
 }
 
@@ -72,40 +49,42 @@ is a derived work of the Debian Free Software Guidelines.
 %
 The Debian packaging system permits a seamless transition to newer
 program versions without the requirement to begin a new installation
-from scratch, and it won't delete your old configuration.
+from scratch, and it won't delete your old configuration files.
 Dependencies between programs are handled automatically:
-If a package which you want to install
+if a package which you want to install
 requires another package, the installer takes care of it.
 You can install and upgrade using disks,
-CD-ROMs, or over a network connection.
+CDROMs, or over a network connection.
 %
 }
 
-% Fixme: there should probably be a subheading "Continuity"
-% and this text should probably go under some subheading,
-% but do they really belong together? How about adding
-% "ease of maintenance" and plug the packaging system
-% in that context instead? (I'd avoid the monstrous word
-% "maintainability" ... and it's hard to translate elegantly)
+\def\SecurityCaption{Security}
 
-
-\def\StabilityCaption{Stability}
-
-\def\Stability{
+\def\Security{
 %
-Debian has no commercial pressure and will not release a new and
-possibly unstable version just because the market requires that. The
-Debian maintainers always test the system thoroughly and attempt to
-remove all known bugs before releasing a new version.
+Debian is secure by default, and easily adjustable in case of really extreme
+security demands.  It is easy to install a Debian system with just very little
+software.  When a security problem is found, the Debian Security Team releases
+packages with backported security fixes, generally within 48 hours.  With the
+help of the Debian package management system, it is therefore easy for an
+inexperienced administrator to keep up to date with security.  This service is
+available to anyone for free.
 %
 }
 
-\def\PortabilityCaption{Portability}
+\def\QualityCaption{Quality}
 
-\def\Portability{
+\def\Quality{
 %
-Debian is available and runs equally well on many architectures, including Intel
-x86, Intel IA-64, Alpha, Motorola 68k, PowerPC and Sun SPARC.
+Due to the personal commitment of Debian developers, package quality is
+unequalled.  Keeping this standard up is furthermore helped by the Debian
+Policy Manual, which describes exactly how packages should behave and interact
+with the system.  A package which violates the policy will not be included in
+the official stable Debian release.  Another aid in quality assurance is the
+open Debian bug tracking system.  Debian does not hide problems.
+Debian has no
+commercial pressure and will not release a new and
+possibly unstable version just because the market requires that.
 %
 }
 
@@ -114,7 +93,8 @@ x86, Intel IA-64, Alpha, Motorola 68k, PowerPC and Sun SPARC.
 \def\Included{
 %
 Actually, the complete Debian GNU/Linux distribution consists of more than 10
-CDs (architecture-dependent precompiled binaries, even more CDs with source).
+CDs.  These CDs hold just the architecture-dependent precompiled binaries;
+you'll need more CDs for the sources.
 Inside you'll find:
 %
 }
@@ -122,7 +102,7 @@ Inside you'll find:
 \def\Utilities{
 %
 the full set of GNU utilities, editors (emacs, vi,~\ldots), network
-clients (chat, IRC, filesharing, ~\ldots), web browsers (including the
+clients (chat, filesharing, ~\ldots), web browsers (including the
 Mozilla browers), privacy tools
 (gpg, ssh,~\ldots), email clients, and every little tool you can think
 of
@@ -131,22 +111,21 @@ of
 
 \def\Networking{
 %
-full set of network protocols (PPP, TCP/IP, Apple\tm\ EtherTalk,
-Windows\tm\ SMB, Novell\tm,~\ldots)
+full set of network protocols (PPP, IPv4, IPv6, SMB network
+neighbourhood,~\ldots)
 %
 }
 
 \def\Programming{
 %
-development tools for the major programming languages (and some of the
-more obscure ones as well) like: C, C++, Objective-C, Java, Python,
-Perl, and more
+development tools for the major programming languages like C, C++,
+Objective-C, Java, Python, Perl, and some of the more obscure ones as well
 %
 }
 
 \def\Windowsystem{
 %
-the X11 Window System, complete with dozens of window managers and the
+the graphical X11 Window System, complete with dozens of window managers and the
 two leading desktops: Gnome and KDE
 %
 }
@@ -170,7 +149,7 @@ Photoshop\tm)
 %
 a complete set of office applications, including the OpenOffice.org
 productivity suite, Gnumeric and other spreadsheets, WYSIWYG editors,
-calendars, databases, etc.
+calendars
 %
 }
 
@@ -187,18 +166,19 @@ languages)
 \def\KnowMore{
 %
 Simply point your browser at
-\boxurl{http://www.debian.org/}. If you need any information or help you
+\boxurl{http://www.debian.org/}.  For more information or help you
 can join the IRC channel \#debian on \boxurl{irc.debian.org}, or
 one of the Debian mailing lists. See
 \boxurl{http://www.debian.org/MailingLists/subscribe} for instructions.
+Furthermore there are lots of inofficial user fora.
 %
 }
 
 \def\Install{
 %
-If you want to install Debian GNU/Linux, you can download the install
+To install Debian GNU/Linux, you can download the install
 floppies from \boxurl{ftp://ftp.debian.org/} and then go for a network
-install, or order some Debian CDs. Debian does not sell CDs itself but
+install, or order (or burn) some Debian CDs. Debian does not sell CDs itself but
 provides Official CD Images that numerous vendors print and sell. 
 For details about the Official CD Images simply go to
 \boxurl{http://www.debian.org/CD/}.
@@ -213,12 +193,14 @@ This flyer was made using \LaTeX\ and a Debian system.
 
 \def\SponsoredBy{
 %
-Printing of this flyer was sponsored by
-%
+% Printing of this flyer was sponsored by
+
 }
 
 % URL of the sponsor
-\def\SponsorURL{http://www.credativ.de/}
+% \def\SponsorURL{http://www.credativ.de/}
+\def\SponsorURL{}
 
 % EPS file in sponsors/ subdirectory
-\def\SponsorLogo{credativ}
+% \def\SponsorLogo{credativ}
+\def\SponsorLogo{}
