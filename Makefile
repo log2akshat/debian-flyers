@@ -11,11 +11,11 @@ base = flyer
 
 export TEXINPUTS=./sponsors:
 
-$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex preamble.tex
+$(base).dvi: $(base).tex $(lang1).tex $(lang2).tex preamble.tex layout.tex
 	./mkconfig $(lang1) $(lang2)
 	latex $(base)
 
-$(base).ps: $(base).tex
+$(base).ps: $(base).dvi
 	dvips $(base)
 
 $(base).jpg: $(base).ps
