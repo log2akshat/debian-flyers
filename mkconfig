@@ -18,6 +18,7 @@ english()
     italiano)	echo "italian";;
     nederlands)	echo "dutch";;
     svenska)	echo "swedish";;
+    portugues)	echo "brazil,brazilian";;
     esac
 }
 
