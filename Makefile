@@ -27,7 +27,7 @@ all.dvi: all.tex $(texfiles) $(langfiles)
 
 $(base).dvi: $(base).tex $(lang1).tex $(lang2).tex $(texfiles) Makefile
 	./mkconfig $(lang1) $(lang2)
-	rm $(base).aux
+	rm -f $(base).aux
 	latex $(base)
 
 $(base).jpg: $(base).ps
@@ -61,6 +61,11 @@ cmyk600: $(base).dvi
 	dvips -D 600 -h aurora.pro -h cyan.pro -o $(base)-600dpi-cyan.ps $(base)
 	dvips -D 600 -h aurora.pro -h black.pro -o $(base)-600dpi-black.ps $(base)
 
+upload: clean
+	$(MAKE) $(base).ps
+	rsync -e ssh -va --exclude CVS/ --delete ./ klecker.debian.org:/org/www.debian.org/events-materials/flyers/general/
+
 clean:
 	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
+	-rm -f all.{ps,eps,dvi,aux,log,jpg}
 	-rm -f $(base)-*.ps
