@@ -13,209 +13,137 @@
 %   along with this program;  if not, write to the Free Software
 %   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
 
-%   translation-check translation="1.10"
+%   translation-check translation="1.12"
 
 % Contributed by Wouter Verhelst <wouter@debian.org>
+
 % Updated by Bas Zoetekouw <bas@debian.org>
-% Updated august 2004 by Joost van Baal <joostvb@debian.org>
+
+% Updated august - september 2004 by Joost van Baal <joostvb@debian.org>
+
+% Thanks to Marianne Driessen ( http://www.driewerf.nl/ )
+% for proofreading
+
+% Imported stuff from r333 | wsl | 2004-09-19 13:58:16 +0200 (Sun, 19 Sep 2004),
+% as found after running
+%  $ svn co http://fruit.eu.org/svn/wsl/texmf/flyer
+% : puntkomma's achter opsomming; trema's ipv umlauts; fixed formatting. Thanks
+% to Wessel Dankers
+
+% this is version Mon, 20 Sep 2004 21:59:48 +0200
 
 \selectlanguage{dutch}
 
-\def\Universal{Het Universele Besturingssysteem}
+\def\Universal{Het universele besturingssysteem}
 
 \def\WhatIsDebianCaption{Wat is Debian GNU/Linux?}
 
-\def\WhatIsDebian{
-%
-Debian is een vrij besturingssysteem voor uw computer. Een
-besturingssysteem is de set van programma's die
-ervoor zorgen dat uw computer nuttige dingen kan doen.
-De kernel is het hart van het OS en het meest fundamentele
-programma op uw computer: het doet de basishuishouding en stelt de
-gebruiker in staat om programma's te starten. Op dit moment is
-Debian gebaseerd op de Linux kernel en bevat het meer dan 9500
-pakketten met allerlei programma's. Bijna 1000 ontwikkelaars helpen
-om de hoge kwaliteit van Debian te behouden.%
-%
-}
+\def\WhatIsDebian{Debian is een vrij besturingssysteem voor uw computer.  Op
+dit moment is Debian gebaseerd op de Linux-kernel en bevat het meer dan 10.000
+pakketten met allerlei programma's.  Dit is veel meer programmatuur dan er voor
+andere vrije besturingssystemen beschikbaar is.  Debian ondersteunt veel
+computerarchitecturen, waaronder Intel x86, Intel IA-64, PowerPC, Sun SPARC,
+Alpha en Motorola 68k.  Een team van bijna duizend ontwikkelaars zorgt ervoor
+dat de hoge kwaliteit van Debian gewaarborgd blijft.}
 
 \def\FreedomCaption{Vrijheid}
 
-\def\Freedom{
-%
-Debian bestaat volledig uit Vrije Software. Dat betekent meer dan alleen
-dat de software gratis is: ook de vrijheid om de software voor elk doel
-te gebruiken, te delen met uw vrienden en kennissen, de broncode te
-lezen en aan te passen en die wijzigingen aan anderen door te geven,
-valt eronder.  Debian kan dus gebruikt worden zonder beperkingen ---
-zelfs in commerci\"ele omgevingen! Debian is de grootste verzameling
-vrije software beschikbaar op het Internet en is direct klaar voor
-gebruik.%
-%
-}
+\def\Freedom{Zoals vastgelegd in het Debian Sociale Contract, bestaat Debian
+volledig uit Vrije Software. Dat betekent meer dan alleen dat de software
+gratis is: ook de vrijheid om de software voor elk doel te gebruiken, te delen
+met uw vrienden en kennissen, de broncode te lezen en aan te passen en die
+wijzigingen aan anderen door te geven, valt eronder.}
 
-\def\CommunityCaption{Gemeenschap}
+\def\ContinuityCaption{Continu"iteit}
 
-\def\Community{
-%
-Het Debian project wordt voor 100\% gedragen door
-vrijwilligers, die zich inzetten om een wereldklasse
-Open Source besturingssysteem te produceren. Er zijn op dit moment zo'n
-duizend mensen overal ter wereld bezig met het ontwikkelen van Debian,
-elk met taken vari\"erend van het onderhouden van pakketten tot quality
-assurance, beveiliging, beleid en strategie. Het Debian project gelooft
-in de principes van software-vrijheid en -openheid, hetgeen duidelijk
-wordt weergegeven in het Sociale Contract, dat is gepubliceerd op
-\boxurl{http://www.debian.org/social_contract}. De Debian Richtlijnen
-voor Vrije Software beschrijven de criteria waaraan licenties voor
-software in het Debian besturingssysteem moeten voldoen. De
-algemene Open-Source--definitie is een afgeleide van de Debian
-Richtlijnen voor Vrije Software.
-%
-}
+\def\Continuity{Het packagingsysteem van Debian laat een probleemloze overgang
+naar nieuwe versies van software toe, zonder dat u vanaf nul moet beginnen en
+zonder dat uw oude configuratie overschreven zal worden. Onderlinge
+afhankelijkheden tussen pakketten worden automatisch opgelost en u kunt
+upgraden vanaf allerlei media: harde schijven, CDROMs en direct vanaf het
+internet.}
 
-\def\ContinuityCaption{Continu\"\i{}teit}
+\def\SecurityCaption{Veiligheid}
 
-\def\Continuity{
-%
-Het packaging-systeem van Debian laat een probleemloze overgang naar
-nieuwe versies van software toe, zonder dat u vanaf nul moet beginnen, 
-en zonder dat uw oude configuratie
-overschreven zal worden. Onderlinge afhankelijkheden tussen pakketten
-worden automatisch opgelost en u kan upgraden van allerlei media:
-diskettes, harde schijven, CDROM's en direct vanaf het Internet.
-%
-}
+\def\Security{Een standaard Debian-systeem is een veilig systeem, en kan
+eenvoudig aangepast worden om aan extreme beveiligingseisen te voldoen.  Het is
+gemakkelijk om een Debian-systeem in te richten met alleen de software die u
+daadwerkelijk gebruikt.  Wanneer een beveiligingsprobleem is gevonden stelt
+Debians securityteam aangepaste pakketten beschikbaar: de aanpassingen hebben
+alleen betrekking op het oplossen van het beveiligingsprobleem.  Over het
+algemeen is een dergelijke oplossing binnen 48 uur beschikbaar.  Met behulp van
+Debians packagingsysteem kan een onervaren systeembeheerder zo gemakkelijk
+de beveiliging bij de tijd houden.  Deze dienst is voor iedereen gratis
+beschikbaar.}
 
-\def\StabilityCaption{Stabiliteit}
+\def\QualityCaption{Kwaliteit}
 
-\def\Stability{
-%
-Debian kent geen commerci\"ele druk en zal geen nieuwe, mogelijk
-onstabiele, versie vrijgeven, alleen omdat de markt dat vereist. De
-ontwikkelaars van Debian  testen hun systeem altijd zeer uitgebreid en
-proberen alle bekende bugs te verwijderen voordat een nieuwe versie
-vrijgegeven wordt.
-%
-}
-
-\def\PortabilityCaption{Compatibiliteit}
-
-\def\Portability{
-%
-Debian is beschikbaar voor tien computerarchitecturen, waaronder
-Intel x86, Intel IA-64, Alpha, Motorola 68k, PowerPC en Sun SPARC.
-%
-}
+\def\Quality{De kwaliteit van de Debian-pakketten is dankzij de persoonlijke
+inzet van de Debian ontwikkelaars onge"evenaard.  De Debian Policy Manual,
+waarin precies is beschreven hoe pakketten zich dienen te gedragen en op welke
+manier die met het systeem samenwerken, helpt hierbij.  Een pakket dat zich
+niet houdt aan deze policy zal niet geleverd worden in de offici"ele stabiele
+Debian-versie. Verder wordt Debians publieke bugtrackingsysteem gebruikt
+bij het bewaken van de kwaliteit.  Debian verbergt problemen niet.  Debian kent
+geen commerci"ele druk en zal geen nieuwe, mogelijk onstabiele, versie
+vrijgeven alleen omdat de markt dat vraagt.}
 
 \def\IncludedCaption{Beschikbaar voor Debian GNU/Linux}
 
-\def\Included{
-%
-De complete Debian GNU/Linux-distributie zo groot dat ze meer dan
-10 CD's nodig heeft (dit zijn slechts de architectuur-afhankelijke
-programma's;  de CD's met broncode komen daar nog bij).
-Op deze CD's vindt u onder meer:
-%
-}
+\def\Included{De complete Debian GNU/Linux-distributie is zo groot dat ze meer
+dan 10 CDs nodig heeft.  Deze CDs zijn slechts de architectuurafhankelijke
+programma's; de broncode komt daar nog bij. Op deze CDs vindt u onder meer:}
 
-\def\Utilities{
-%
-de volledige set GNU hulpprogramma's, editors (o.a.~emacs, vi),
-netwerkprogrammatuur (o.a.~chat, IRC, filesharing), webbrowsers
-(waaronder de Mozilla browsers), privacy
-software (o.a.~gpg, ssh), emailprogramma's en vele utilities
-%
-}
+\def\Utilities{de volledige set GNU hulpprogramma's, editors (o.a.~emacs, vi),
+netwerkprogrammatuur (o.a.~chat, filesharing), webbrowsers (waaronder de
+Mozilla browsers), privacysoftware (o.a.~gpg, ssh), emailprogramma's en vele
+utilities;}
 
-\def\Networking{
-%
-een volledige set netwerkprotocollen (PPP, TCP/IP, Apple\tm~Ethertalk,
-Windows\tm~SMB, Novell\tm,~\ldots)
-%
-}
+\def\Networking{een volledige set netwerkprotocollen (PPP, IPv4, IPv6,
+SMB-netwerkomgeving,~\ldots);}
 
-\def\Programming{
-%
-ontwikkelingssoftware voor de meest gebruikte programmeertalen (en
-voor een aantal van de minder gebruikte talen) zoals: C, C++,
-Objective-C, Java, Python, Perl, enzovoort
-%
-}
+\def\Programming{ontwikkelingssoftware voor de meest gebruikte programmeertalen
+zoals C, C++, Objective-C, Java, Python, Perl, en ook voor vele van de minder
+gebruikte talen;}
 
-\def\Windowsystem{
-%
-het X11 systeem aangevuld met tientallen windowmanagers en de
-twee leidende desktops: Gnome en KDE
-%
-}
+\def\Windowsystem{het grafische X11 systeem aangevuld met tientallen
+windowmanagers en de twee leidende desktops: Gnome en KDE;}
 
-\def\Documents{
-%
-het \TeX/\LaTeX\ documentsysteem, PostScript- en Type1-lettertypen en
-hulpprogramma's, de GhostScript PostScript\tm-interpreter en een
-XML/SGML/HTML-ontwikkelomgeving
-%
-}
+\def\Documents{het \TeX/\LaTeX\ documentsysteem, PostScript- en
+Type1-lettertypen en hulpprogramma's, de GhostScript PostScript-interpreter en
+een XML/SGML/HTML-ontwikkelomgeving;}
 
-\def\Graphics{
-%
-the GIMP (GNU Image Manipulation Program)
-%
-}
+\def\Graphics{the GIMP (GNU Image Manipulation Program);}
 
-\def\Office{
-%
-een complete set bureau-applicaties, waaronder de OpenOffice.org productivity
-suite, Gnumeric en andere spreadsheets, WYSIWYG-editors, kalenders, databases,
-enzovoort
-%
-}
+\def\Office{een complete set bureau-applicaties, waaronder de OpenOffice.org
+productivitysuite, Gnumeric en andere spreadsheets, WYSIWYG-editors,
+kalenders;}
 
-\def\Databases{
-%
-relationele databases, zoals PostgreSQL, MySQL en ontwikkeltools
-(applicatieservers, server-side scriptingtalen)
-%
-}
+\def\Databases{relationele databases, zoals PostgreSQL, MySQL en ontwikkeltools
+(applicatieservers, serverside scriptingtalen).}
 
 \def\KnowMoreCaption{Meer weten?}
 
-\def\KnowMore{
-%
-Kijk op \boxurl{http://www.debian.org/}. Als u informatie of hulp nodig
-hebt, kunt u terecht op het IRC-kanaal \#debian op
-\boxurl{irc.debian.org}, of op een van de mailinglijsten van Debian.
-Zie \boxurl{http://www.debian.org/MailingLists/subscribe} voor meer
-informatie.
-%
-}
+\def\KnowMore{Kijk op \boxurl{http://www.debian.org/}. Voor informatie of hulp
+kunt u terecht op het IRC-kanaal \#debian op \boxurl{irc.debian.org}, of op een
+van de mailinglijsten van Debian. Zie
+\boxurl{http://www.debian.org/MailingLists/subscribe} voor meer informatie.
+Verder zijn er talloze andere gebruikersforums.}
 
-\def\Install{
-%
-Als u Debian GNU/Linux wenst te installeren, dan kunt u de
-installatiediskettes downloaden van \boxurl{ftp://ftp.debian.org/} en
-van daaruit een netwerkinstallatie doen, of een aantal Debian CD's
-bestellen. Debian verkoopt zelf geen CD's maar stelt offici\"ele
-CD-images ter beschikking die door verschillende verkopers geperst en
-verkocht worden. Voor details over de offici\"ele CD-images kunt u terecht
-op \boxurl{http://www.debian.org/CD/}.%
-}
+\def\Install{Voor het installeren van Debian GNU/Linux kunt u de
+installatiediskettes downloaden van \boxurl{ftp://ftp.debian.org/} en van
+daaruit een netwerkinstallatie doen, of een aantal Debian-CDs bestellen of
+branden. Debian verkoopt zelf geen CDs maar stelt offici"ele CD-images ter
+beschikking die door verschillende verkopers geperst en verkocht worden. Voor
+details over de offici"ele CD-images kunt u terecht op
+\boxurl{http://www.debian.org/CD/}.}
 
-\def\MadeWith{
-%
-Deze folder is gemaakt met \LaTeX\ op een Debian systeem.
-%
-}
+\def\MadeWith{Deze folder is gemaakt met \LaTeX\ op een Debian systeem.}
 
-\def\SponsoredBy{
-%
-Het drukken van deze folder is gesponsord door
-%
-}
+\def\SponsoredBy{Het drukken van deze folder is gesponsord door}
 
 % URL of the sponsor
-\def\SponsorURL{http://www.credativ.de/}
+\urldef\SponsorURL\url{http://murphy.nl/}
 
 % EPS file in sponsors/ subdirectory
-\def\SponsorLogo{credativ}
+\def\SponsorLogo{murphy}
