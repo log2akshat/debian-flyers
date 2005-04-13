@@ -91,6 +91,14 @@ cmyk600pdf: cmyk600
 	ps2pdf $(base)-600dpi-black.ps $(base)-600dpi-black.pdf
 
 #
+# sponsor logos
+#
+
+# Murphy sponsored nederlands.tex
+sponsors/murphy.eps:
+	cd sponsors; wget http://www.murphy.nl/picts/logo_new_top64.gif; convert logo_new_top64.gif murphy.eps
+
+#
 # housekeeping targets
 #
 
