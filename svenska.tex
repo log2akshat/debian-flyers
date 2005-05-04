@@ -1,4 +1,4 @@
-%   Copyright (c) 2002 Software in the Public Interest, Inc.
+%   Copyright (c) 2000,2002 Software in the Public Interest, Inc.
 %
 %   This program is free software; you can redistribute it and/or modify
 %   it under the terms of the GNU General Public License as published by
@@ -13,29 +13,25 @@
 %   along with this program;  if not, write to the Free Software
 %   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
 
-%   translation-check translation="1.9"
+% translation-checktranslation="1.13"
 
-% Contributed by Karl Hammar <karl@kalle.csb.ki.se>
+% Contributed by Lars Bjarby <laban@krakpot.net>
+% based on a previous translation by: Karl Hammar <karl@kalle.csb.ki.se>
 
 \selectlanguage{swedish}
 
-\def\Universal{Det universella operativsystemet}
+\def\Universal{Det Universella Operativsystemet}
 
 \def\WhatIsDebianCaption{Vad är Debian GNU/Linux?}
 
 \def\WhatIsDebian{
 %
-Debian är ett fritt operativsystem (OS) för din dator.
-Ett operativsystem består av program och verktyg som gör
-att du kan använda datorn.
-I botten av ett operativsystem finns en kärna.
-Den är operativsystemets mest fundamentala program.
-Kärnan förvaltar datorn och dess resurser
-och ser till att andra program kan användas.
-Debian baseras på Linuxkärnan och innehåller
-fler än 9\,500 paket.
-De underhålls av
-nästan 1\,000 utvecklare.
+Debian är ett fritt operativsystem för din dator. Debian är för närvarande
+baserat på Linuxkärnan och inkluderar mer än 10000 paket med verktyg och applikationer.
+Detta är väldigt mycket mer programvara än vad som finns tillgängligt för andra fria
+operativsystem. Många arkitekturer stöds, detta inkluderar Intel x86, Intel IA-64, Alpha,
+Motorola 68k, PowerPC och Sun SPARC. Nästan 1000 frivilliga utvecklare arbetar med att
+upprätthålla Debians höga kvalité.
 %
 }
 
@@ -43,36 +39,11 @@ nästan 1\,000 utvecklare.
 
 \def\Freedom{
 %
-Debian består endast av fri programvara. Med detta menas inte bara
-att programmen är gratis,
-utan också att du har full frihet att använda dem
-när, var och hur du vill.
-Dela dem med dina vänner, läs och förändra källkoden och förmedla
-dina egna ändringar till andra människor.
-Det betyder att Debian kan användas utan begränsningar, också i din
-affärsverksamhet.
-Debian är den största samlingen av fri programvara på Internet.
-Alla program är färdigt anpassade för Debian,
-kompilerade och klara att installera.
-%
-}
-
-\def\CommunityCaption{Intressegemenskap}
-
-\def\Community{
-%
-Debianprojektet är en till 100\% frivillig organisation
-vars mål är att skapa ett operativsystem av världsklass.
-Det finns ungefär 1\,000 personer från hela jorden som utvecklar Debian.
-De arbetar med allt från paketunderhåll
-till kvalitetskontroll, säkerhet, policy och strategifrågor.
-Debianprojektet följer
-bestämda priciper om öppenhet och fri programvara.
-Dessa är dokumenterade i Debians sociala kontrakt som kan läsas på
-\boxurl{http://www.debian.org/social_contract}.
-Debians riktlinjer för fri programvara anger kriterierna som programvara
-måste uppfylla för att accepteras av Debian.
-Det som i dag kallas ''Open Source'' härstammar från dessa riktlinjer.
+Som det fastslås i Debians sociala kontrakt består Debian helt och hållet av
+fri programvara. Med fri programvara menar 
+vi inte bara ingen kostnad utan även friheten att använda
+den hur och var du vill, dela med dig av den till dina vänner, läsa och 
+modifiera källkoden och distribuera dessa förändringar till andra personer.
 %
 }
 
@@ -81,79 +52,80 @@ Det som i dag kallas ''Open Source'' härstammar från dessa riktlinjer.
 \def\Continuity{
 %
 Debians paketeringssystem tillåter en smärtfri övergång till nya
-programversioner.
-Du kan uppgradera utan att behöva installera om från början
+programversioner utan att behöva installera om från början
 och utan att förlora programmens gamla inställningar.
-Beroenden mellan program hanteras automatiskt.
+Beroenden mellan program hanteras automatiskt: Om ett paket som
+du vill installera kräver ett annat paket, tas detta om hand
+automatiskt av installationsprogrammet. 
 Du kan installera och uppgradera
-från diskett, hårdskiva, CD-ROM eller direkt över Internet.
+från diskett, hårddisk, CD-ROM eller direkt över en nätverksanslutning.
 %
 }
 
-\def\StabilityCaption{Stabilitet}
+\def\SecurityCaption{Säkerhet}
 
-\def\Stability{
+\def\Security{
 %
-Eftersom Debian inte har något kommersiellt tryck på sig kommer nya,
-möjligtvis instabila, versioner inte att ges ut på grund av
-kortsiktiga marknadshänsyn.
-Nya versioner av Debian släpps i stället med längre cykler, när systemet
-är tillräckligt stabilt.
-Debians utvecklare testar systemet grundligt och försöker ta bort
-alla kända fel innan en ny version släpps.
-%
-}
-
-\def\PortabilityCaption{Portabilitet}
-
-\def\Portability{
-%
-Debian är tillgänglig och fungerar lika bra på följande arkitekturer:
-Alpha, ARM, HP PA-RISC, IBM S/390, Intel x86, Intel
-IA-64, Motorola 68k, MIPS/MIPSel, PowerPC, SPARC.
+Debian är säkert från början och är enkelt justerbart i fall där extrem säkerhet
+krävs. Det är enkelt att installera ett Debian-system med mycket lite programvara.
+När ett säkerhetsproblem upptäcks släpper Debians säkerhetsteam ett paket med
+säkerhetsfixar, vanligtvis inom 48 timmar. Med hjälp av Debians pakethanteringssystem
+är det enkelt för en icke erfaren administratör att hålla säkerheten uppdaterad.
+Den här tjänsten är tillgänglig gratis för alla.
 %
 }
 
-\def\IncludedCaption{Detta får du med Debian GNU/Linux}
+\def\QualityCaption{Kvalitet}
+
+\def\Quality{
+%
+Tack vare Debianutvecklarnas personliga engagemang är paketkvaliteten oöverträffad.
+För att hålla denna höga standard finns även Debians policymanual, som beskriver
+exakt hur paket skall bete sig och interagera med systemet. Ett paket som bryter
+mot policyn kommer inte bli inkluderat i den officiella stabila Debian-utgåvan.
+Debians bugghanteringssytem hjälper även det med kvalitetssäkringen. Debian gömmer inte
+problem. 
+Debian har inget kommersiellt tryck på sig och kommer inte släppa en
+ny ostabil version bara för att marknaden kräver det.
+%
+}
+
+\def\IncludedCaption{Inkluderat med Debian GNU/Linux}
 
 \def\Included{
 %
-Den totala Debian GNU/Linux-distributionen får knappt plats på 6 CD-skivor
-(per arkitektur, färdigkompilerade program; med källkod krävs det
-fler CD-skivor).
+Den totala Debian GNU/Linux-distributionen består av mer än 10 CD-skivor. Dessa
+CD-skivor innehåller endast de arkitekturberoende färdigkompilerade programmen; du kommer behöva mer CD-skivor för källkoden.
 De innehåller bl.a:
 %
 }
 
 \def\Utilities{
 %
-en komplett uppsättning GNU-verktyg, editorer (emacs, vi~\ldots),
-nätverksklienter (telnet, ftp, finger~\ldots), webbläsare, säkerhetsprogram
-(gpg, ssh~\ldots), e-postprogram och alla möjliga andra verktyg
+den kompletta uppsättningen GNU-verktyg, editorer (emacs, vi~\ldots),
+nätverksklienter (chat, fildelning,~\ldots), webbläsare (inkluderat Mozillawebbläsarna), säkerhetsprogram
+(gpg, ssh~\ldots), e-postprogram och alla möjliga andra verktyg du kan
+tänka dig.
 %
 }
 
 \def\Networking{
 %
-stöd för de flesta nätverksprotokoll
-(PPP, TCP/IP, Apple\tm\ EtherTalk,
-Windows\tm\ SMB, Novell\tm~\ldots)
+stöd för de flesta nätverksprotokoll (PPP, IPv4, IPv6, SMB nätverksplatser,~\ldots)
 %
 }
 
 \def\Programming{
 %
-utvecklingsverktyg för alla de vanligaste programspråken
-(och några ovanliga):
-C, C++, Objective-C, Java, Python,
-Perl, Smalltalk, Lisp, Scheme, Haskell, Ada~\ldots
+utvecklingsverktyg för alla de vanligaste programspråken som
+C, C++, Objective-C, Java, Python, Perl och även några av de mer obskyra
 %
 }
 
 \def\Windowsystem{
 %
-det grafiska användargränsnittet X11, komplett med dussintals
-fönsterhanterare och de två ledande desktopmiljöerna Gnome och KDE
+det grafiska användargränsnittet X11 Window System, komplett med dussintals
+fönsterhanterare och de två ledande skrivbordsmiljöerna Gnome och KDE
 %
 }
 
@@ -167,16 +139,15 @@ utvecklingsmiljö för XML/SGML/HTML
 
 \def\Graphics{
 %
-GIMP, ''the GNU Image Manipulation Program''
-(ett fritt alternativ till
+GIMP, the GNU Image Manipulation Program (ett fritt alternativ till
 Photoshop\tm)
 %
 }
 
 \def\Office{
 %
-en komplett uppsättning kontorsprogram: ordbehandlare, kalenderprogram,
-kalkylark, databaser etc.
+en komplett uppsättning kontorsprogram inluderande de från OpenOffice.org, 
+Gnumetric och andra kalkylprogram, WYSIWYG-editorer, kalendrar
 %
 }
 
@@ -187,49 +158,33 @@ utvecklingsverktyg (applikationsservrar, skriptspråk för servern)
 %
 }
 
-\def\KnowMoreCaption{Vill du veta mera?}
+\def\KnowMoreCaption{Vill du veta mer?}
 
 \def\KnowMore{
 %
-På Debians hemsida \boxurl{http://www.debian.org/} finns mycket information.
-Du kan prenumerera på Debians mailinglistor. Bokning görs på
-\boxurl{http://www.debian.org/MailingLists/subscribe}.
-Om du vill chatta om Debian kan du göra det på IRC-kanalen \#debian
-på \boxurl{irc.debian.org}
+Gå med din webbläsare till \boxurl{http://www.debian.org}. För mer information
+eller hjälp kan du gå in i IRC-kanalen \#debian på \boxurl{irc.debian.org} eller
+prenumerera på en av Debians sändlistor. Gå till \boxurl{http://www.debian.org/MailingLists/subscribe} för
+mer instruktioner. Det finns även många icke-officiella användarforum.
 %
 }
 
 \def\Install{
 %
-Du kan ladda ned installationsdisketter
-för Debian GNU/Linux
-från \boxurl{ftp://ftp.debian.org/}
-och installera över Internet.
-Alternativt kan du
-skaffa dig en uppsättning
-CD-skivor.
-Debian säljer inte själva
-dessa CD-skivor,
-men gör en uppsättning officiella CD-original
-(se \url{http://www.debian.org/CD/})
-som ett flertal distributörer
-reproducerar och säljer.
-Installationsinstruktioner finns på
-\boxurl{http://www.debian.org/releases/stable/}.
+För att installera Debian GNU/Linux kan du ladda ner disketter
+från \boxurl{ftp://ftp.debian.org} och sedan installera via nätverket. Debian säljer 
+inte själva CD-skivor, men tillhandahåller officiella CD-avbildningar som 
+ett flertal försäljare reproducerar och säljer. För mer information gå till \boxurl{http://www.debian.org/CD/}.
 %
 }
 
 \def\MadeWith{
 %
-Denna broschyr gjordes med hjälp av \LaTeX\ och ett Debiansystem.
+Detta flygblad gjordes med hjälp av \LaTeX\ och ett Debiansystem.
 %
 }
 
-\def\SponsoredBy{
-%
-Tryckningen av detta flygblad sponsrades av
-%
-}
+\def\SponsoredBy{Tryckningen av detta flygblad sponsrades av}
 
 % URL of the sponsor
 \def\SponsorURL{http://www.credativ.de/}
