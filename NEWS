@@ -1,11 +1,20 @@
-# $Id: NEWS,v 1.3 2005/02/01 07:36:38 joostvb Exp $
+# $Id: NEWS,v 1.4 2005/05/05 19:29:17 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/NEWS,v $
 
 debian-flyers/general NEWS file
 
+Run "make ChangeLog" to see detailed per-file info.
+
+- Changes made in May 2005:
+  * Thanks to contributions from Lars Bjarby, Marco Carvalho and
+    Claus Hindsgaul, svenska.tex, portugues.tex and dansk.tex are up to date
+    again.
+
 - Changes made in February 2005:
   * TODO, NEWS: added
   * README.printing: minor update
+  * Makefile, translation-check.pl: check-target added for checking
+    translation up-to-dateness.
 
 - November 2004:
   CVS was moved from cvs.infodrom.org to cvs.alioth.debian.org.
