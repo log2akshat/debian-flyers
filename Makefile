@@ -56,7 +56,8 @@ $(base).jpg: $(base).ps
 	# mogrify -rotate -90 $(base).jpg
 
 $(base).png: $(base).ps
-	gs -dBATCH -dNOPAUSE -sDEVICE=png16 -sPAPERSIZE=a4 -sOutputFile=$(base).png $(base).ps
+	gs -dBATCH -dNOPAUSE -sDEVICE=png256 -sPAPERSIZE=a4 -sOutputFile=$(base).png $(base).ps
+	# gs -dBATCH -dNOPAUSE -sDEVICE=png16 -sPAPERSIZE=a4 -sOutputFile=$(base).png $(base).ps
 	# mogrify -rotate -90 $(base).png
 
 300dpi: $(base).dvi
@@ -116,3 +117,7 @@ clean:
 	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
 	-rm -f all.{ps,eps,dvi,aux,log,jpg}
 	-rm -f $(base)-*.ps
+
+ChangeLog: NEWS
+	cvs2cl --accum --prune
+
