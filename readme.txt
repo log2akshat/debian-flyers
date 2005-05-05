@@ -5,7 +5,8 @@ Through the web:
 
   http://cvs.alioth.debian.org/cgi-bin/cvsweb.cgi/?cvsroot=debian-flyers
 
-Through read/write CVS (if you have an Alioth account in the debian-flyers group)
+Through read/write CVS (if you have an Alioth account in the
+debian-flyers group)
 
    cvs -d :ext:<username>@alioth.debian.org:/cvsroot/debian-flyers co general
 
@@ -27,11 +28,13 @@ Please use the Makefile which provides several targets for you:
   make lang1=nederlands lang2=english flyer.ps
 
        Compiles the flyer, using nederlands for language on front
-       page, and english for language on back page.
+       page, and english for language on back page.  (You might have
+       to run "# dpkg-reconfigure tetex-bin" to add hyphenation
+       support for the language to your TeX installation.)
 
   make flyer.jpg
 
-       Compils the flyer like with flyer.ps and copies the first page
+       Compiles the flyer like with flyer.ps and copies the first page
        into a JPEG file.
 
   make all.ps
@@ -50,10 +53,11 @@ Please use the Makefile which provides several targets for you:
 Adding a translation
 --------------------
 
-To add a new translation to this general flyer, copy english.txt into
+To add a new translation to this general flyer, copy english.tex into
 language.tex, where "language" is the local name of your language
 (i.e. francaise for french, deutsch for german etc.).  Please add the
-file to this directory (e.g. by sending a mail to joey@debian.org).
+file to this directory (e.g. by sending a mail to joey@debian.org or
+debian-flyers-devel@lists.alioth.debian.org).
 
 When you add a new translation, please be careful with the size of
 your translation.  If the text is too long, an empty page is inserted
