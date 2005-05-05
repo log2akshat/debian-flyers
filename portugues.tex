@@ -1,4 +1,4 @@
-%   Copyright (c) 2002 Software in the Public Interest, Inc.
+%   Copyright (c) 2000,2002 Software in the Public Interest, Inc.
 %
 %   This program is free software; you can redistribute it and/or modify
 %   it under the terms of the GNU General Public License as published by
@@ -13,11 +13,12 @@
 %   along with this program;  if not, write to the Free Software
 %   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
 
-%   translation-check translation="1.9"
+%   translation-check translation="1.13"
 
 % Contributed by Carlos A P Gomes <carlos@aocg.org>
+% Contributed by Marco A C Silva <marcoacarvalho@gmail.com>
 
-\hyphenation{a-tu-al-men-te Debian}
+\selectlanguage{portuguese}
 
 \def\Universal{O Sistema Operacional Universal}
 
@@ -25,13 +26,13 @@
 
 \def\WhatIsDebian{
 %
-O Debian é um sistema operacional livre para o seu computador. Sistema
-operacional é um conjunto  básico de programas e utilitários que fazem seu
-computador funcionar. No núcleo de todo sistema operacional está o kernel. Ele
-é o programa mais fundamental no computador: executa todas as funções básicas
-de administração e lhe permite executar outros programas.
-O Debian é atualmente baseado no kernel Linux e inclui mais de 9500 pacotes
-de utilitários e aplicativos.
+O Debian é um sistema operacional livre para o seu computador. O Debian é 
+atualmente baseado no kernel Linux e inclui mais de 10000 pacotes de
+utilitários e aplicativos. Isto é bem mais do que está disponível em qualquer
+outro sistema operacional Livre. Muitas arquiteturas são suportadas, incluindo
+Intel x86, Intel IA-64, Alpha, Motorola 68k, PowerPC e Sun SPARC.
+Quase 1000 desenvolvedores voluntários estão trabalhando para manter a alta
+qualidade do Debian.
 %
 }
 
@@ -39,31 +40,11 @@ de utilitários e aplicativos.
 
 \def\Freedom{
 %
-O Debian consiste apenas de Software Livre, o que
-não significa somente custo zero, mas também a Liberdade de usar como
-e onde quiser, compartilhar com seus amigos, ler e modificar o código fonte,
-e distribuir estas modificações para outras pessoas. Isto significa que o
-Debian pode ser usado sem nenhuma limitação - mesmo em ambientes comerciais!
-O Debian é a maior coleção de Software Livre pronto para instalar 
-da Internet.
-%
-}
-
-\def\CommunityCaption{Comunidade}
-
-\def\Community{
-%
-O projeto Debian é um esforço 100\% voluntário comprometido com a produção de
-de um sistema operacional de Código Aberto de padrão mundial. Envolve 
-quase 1000 pessoas de toda parte do mundo, cada uma com funções que vão desde
-o desenvolvimento de pacotes até o controle de qualidade, segurança, política 
-e estratégia. Seu compromisso com os princípios de liberdade e abertura de software
-está claro no Contrato Social Debian publicado em 
-\boxurl{http://www.debian.org/social_contract}.
-As Orientações Debian para Programas Livres
-descrevem os critérios que as licenças para os 
-programas inclusos no Debian devem seguir e foram a base para os trabalhos que
-criaram a Definição de Código Aberto.
+Como consta no Contrato Social Debian, o Debian consiste inteiramente de 
+Software Livre. Com Software Livre nós não queremos dizer apenas custo zero,
+mas também a Liberdade de usar como e onde quiser, compartilhar com seus amigos,
+ler e modificar o código fonte, e distribuir estas modificações para outras 
+pessoas.
 %
 }
 
@@ -73,31 +54,39 @@ criaram a Definição de Código Aberto.
 %
 O sistema de empacotamento do Debian permite a transição tranqüila
 para novas versões de programas sem a necessidade de iniciar uma nova instalação
-do zero, e sem apagar a configuração antiga. As dependências 
+do zero, e sem apagar a configuração antiga. As dependências entre programas 
 são tratadas automaticamente: se um pacote que você quiser instalar necessitar de
 outro, o instalador cuidará disto. Você pode fazer uma nova instalação
 ou atualização a partir de discos, CD-roms, ou até via rede.
 %
 }
 
-\def\StabilityCaption{Estabilidade}
+\def\SecurityCaption{Security}
 
-\def\Stability{
+\def\Security{
 %
-O Debian não sofre pressão comercial e não vai liberar uma versão
-nova, talvez instável, só porque o mercado quer. Os mantenedores do
-Debian sempre testam o sistema completamente e tentam remover todos
-os erros conhecidos antes de liberar uma nova versão.
+O Debian é seguro por padrão, e é facilmente ajustável em casos que demandam
+segurança extrema. É fácil instalar um sistema de Debian com apenas o software
+necesário. Quando um problema de segurança é encontrado, o Time de Segurança
+Debian libera pacotes com atualizações de segurança, geralmente dentro de 48 horas.
+Com a ajuda do sistema de gerenciamento de pacotes Debian, é muito fácil para um
+administrador inexperiente manter atualizado com segurança. Este serviço está
+disponível para qualquer um de graça.
 %
 }
 
-\def\PortabilityCaption{Portabilidade}
+\def\QualityCaption{Qualidade}
 
-\def\Portability{
+\def\Quality{
 %
-O Debian está disponível e roda igualmente bem nas seguintes arquiteturas:
-Alpha, ARM, HP PA-RISC, IBM S/390, Intel x86, Intel IA-64, Motorola 68k,
-MIPS/MIPSel, PowerPC, SPARC.
+Devido ao compromisso pessoal dos desenvolvedores Debian, a qualidade dos pacotes
+é incomparável. Manter este padrão se deve à ajuda do Manual de Política Debian,
+que descreve exatamente como os pacotes devem interagir com o sistema.
+Um pacote que viole a política não será incluído no lançamento oficial do Debian
+estável. Outra ajuda na garantia de qualidade é o sistema aberto de rastreamento
+de bug Debian. O Debian não esconde problemas. O Debian não sofre pressão comercial
+e não lança uma nova, e possivelmente instável, versão somente porque o mercado
+assim quer.
 %
 }
 
@@ -105,61 +94,62 @@ MIPS/MIPSel, PowerPC, SPARC.
 
 \def\Included{
 %
-Na verdade a distribuição Debian GNU/Linux completa mal cabe em 6 CDs
-(mais CDs se incluir os fontes). Dentro você encontrará:
+Na verdade, a distribuição Debian GNU/Linux consiste em mais de 10
+CDs. Estes CDs contém apenas binários pré-compilados dependentes de
+arquitetura; você precisará de mais CDs para os fontes.
+Dentro você encontrará:
 %
 }
 
 \def\Utilities{
 %
-o conjunto completo dos utilitários GNU, editores (emacs, vi,~\ldots), clientes
-de rede (telnet, ftp, finger,~\ldots), navegadores web, ferramentas de
-privacidade (gpg, ssh,~\ldots) clientes de email, e toda e qualquer ferramenta
-que você possa imaginar
+o conjunto de utilitários GNU, editores (emacs, vi,~\ldots), clientes
+de rede (chat, compartilhamento,~\ldots), navegadores web (incluindo a família Mozilla),
+privacidade (gpg, ssh,~\ldots), clientes de email, e toda e qualquer
+ferramenta que você possa imaginar
 %
 }
 
 \def\Networking{
 %
-conjunto completo de protocolos de rede (PPP, TCP/IP, Apple\tm\ EtherTalk,
-Windows\tm\ SMB, Novel\tm\,~\ldots)
+conjunto completo de protocolos de rede (PPP, IPv4, IPv6,
+rede SMB,~\ldots)
 %
 }
 
 \def\Programming{
 %
 ferramentas de desenvolvimento para as principais linguagens de programação
-(e algumas das mais obscuras também) como: C, C++, Objective-C, Java,
-Python, Perl, Smalltalk, Lisp, Scheme, Haskell, ADA, dentre outras 
+como C, C++, Objective-C, Java, Python, Perl, e algumas das mais obscuras também
 %
 }
 
 \def\Windowsystem{
 %
-o sistema de janelas X11 complementado por dúzias de gerenciadores de
-janelas e dois desktops de ponta: Gnome e KDE
+o sistema de janelas X11 completo com dúzias de gerenciadores de janelas e 
+dois desktops de ponta: Gnome e KDE
 %
 }
 
 \def\Documents{
 %
-o sistema de edição de documentos \TeX/\LaTeX\, ferramentas e fontes
-PostScript e Type1, o interpretador PostScript Ghostscript, e um completo
-ambiente de desenvolvimento XML/SGML/HTML
+o sistema de edição \TeX/\LaTeX\, ferramentas e fontes PostScript e Type1,
+o interpretador PostScript Ghostscript, e um completo ambiente de desenvolvimento XML/SGML/HTML
 %
 }
 
 \def\Graphics{
 %
 GIMP, o Programa de Manipulação de Imagem GNU (uma alternativa livre ao
-Photoshop)
+Photoshop\tm)
 %
 }
 
 \def\Office{
 %
-um conjunto completo de aplicativos para escritório: editores WYSIWYG,
-calendários, planilhas, banco de dados, etc.
+conjunto completo de aplicativos para escritório, incluindo a suíte
+OpenOffice.org, Gnumeric e outras planilhas, editores 
+WYSIWYG, calendários
 %
 }
 
@@ -175,23 +165,22 @@ servidor)
 
 \def\KnowMore{
 %
-Aponte seu navegador para 
-\boxurl{http://www.debian.org/}.
-Se necessitar de ajuda conecte-se ao
-canal de IRC \#debian em \boxurl{irc.debian.org}
-ou entre em contato com umas das listas de discussão Debian. Veja
-\boxurl{http://www.debian.org/MailingLists/subscribe} para orientações.
+Aponte seu navegador para \boxurl{http://www.debian.org/}.
+Se pecisar de ajuda entre no canal de IRC \#debian em 
+\boxurl{irc.debian.org} ou entre em uma das listas de discussão
+Debian. Veja \boxurl{http://www.debian.org/MailingLists/subscribe}
+para orientações.
 %
 }
 
 \def\Install{
 %
-Se quiser instalar o Debian GNU/Linux você pode baixar os disquetes de
+Se quiser instalar o Debian GNU/Linux você pode baixar os discos de
 instalação do \boxurl{ftp://ftp.debian.org/} e então partir para uma 
-instalação via rede, ou comprar alguns CDs do Debian. O  
-Debian não vende CDs, mas fornece Imagens Oficiais de CD que vários
-distribuidores gravam e vendem. Para detalhes sobre as Imagens Oficiais
-de CD basta visitar \boxurl{http://www.debian.org/CD/}.
+instalação via rede, ou comprar alguns CDs do Debian. O Debian não 
+vende CDs, mas fornece Imagens Oficiais de CD que vários distribuidores
+gravam e vendem. Para detalhes sobre as Imagens Oficiais de CD basta
+visitar \boxurl{http://www.debian.org/CD/}.
 %
 }
 
@@ -201,11 +190,7 @@ Este pôster foi feito usando \LaTeX\ e um sistema Debian.
 %
 }
 
-\def\SponsoredBy{
-%
-A impressão deste pôster foi patrocinada por
-%
-}
+\def\SponsoredBy{A impressão deste pôster foi patrocinada por}
 
 % URL of the sponsor
 \def\SponsorURL{http://www.credativ.de/}
