@@ -1,7 +1,7 @@
-# $Id: TODO,v 1.6 2005/04/13 19:18:17 joostvb Exp $
+# $Id: TODO,v 1.7 2005/05/05 19:10:11 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/TODO,v $
 
-- Get dansk.tex, italiano.tex, portugues.tex, svenska.tex updated
+- Get italiano.tex updated
 - Get http://alioth.debian.org/projects/debian-flyers/ linked to from
   http://www.nl.debian.org/events/material#flyers (a link
   to Jaldhar H. Vyas's DocBook XML leaflet on
