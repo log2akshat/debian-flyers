@@ -70,4 +70,6 @@ See also
 
 http://debian-flyers.alioth.debian.org/
 
+An unofficial but more frequently updated webpage is at
+http://mdcc.cx/~joostvb/flyer/ .
 
