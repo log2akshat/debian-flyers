@@ -46,6 +46,9 @@ all.dvi: all.tex $(texfiles) $(langfiles)
 	echo -n > config.tex
 	latex all
 
+all.ps.gz: all.ps
+	gzip -c $< > $@
+
 $(base).dvi: $(base).tex $(lang1).tex $(lang2).tex $(texfiles) Makefile
 	./mkconfig $(lang1) $(lang2)
 	rm -f $(base).aux
@@ -107,11 +110,15 @@ sponsors/murphy.eps:
 check:
 	@for l in $(transfiles); do ./translation-check.pl $$l; done
 
-upload: clean
-	$(MAKE) $(base).ps
-	-rm -f $(base).{eps,dvi,aux,log}
-	rsync -e ssh -va --exclude CVS/ --delete ./ klecker.debian.org:/org/www.debian.org/events-materials/flyers/general/
-	ssh klecker "cd /org/www.debian.org/events-materials/flyers/general && chgrp -R webwml * && chmod -R g+w *"
+# upload: clean
+# 	$(MAKE) $(base).ps
+# 	-rm -f $(base).{eps,dvi,aux,log}
+# 	rsync -e ssh -va --exclude CVS/ --delete ./ klecker.debian.org:/org/www.debian.org/events-materials/flyers/general/
+# 	ssh klecker "cd /org/www.debian.org/events-materials/flyers/general && chgrp -R webwml * && chmod -R g+w *"
+
+
+upload: flyer.png all.ps.gz all.pdf
+	scp $? haydn.debian.org:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers/
 
 clean:
 	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
