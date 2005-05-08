@@ -13,7 +13,10 @@
 %   along with this program;  if not, write to the Free Software
 %   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA.
 
-% translation-check translation="1.13"
+% translation-checktranslation="1.13"
+
+% 2005-05-08 03:38 CEST Changed som spelling errors and replaced ldots with m.fl as this
+%                       seems to be more correct in Swedish. //Lars
 
 % Contributed by Lars Bjarby <laban@krakpot.net>
 % based on a previous translation by: Karl Hammar <karl@kalle.csb.ki.se>
@@ -28,10 +31,10 @@
 %
 Debian är ett fritt operativsystem för din dator. Debian är för närvarande
 baserat på Linuxkärnan och inkluderar mer än 10000 paket med verktyg och applikationer.
-Detta är väldigt mycket mer programvara än vad som finns tillgängligt för andra fria
+Detta är långt mer  programvara än vad som finns tillgängligt för andra fria
 operativsystem. Många arkitekturer stöds, detta inkluderar Intel x86, Intel IA-64, Alpha,
 Motorola 68k, PowerPC och Sun SPARC. Nästan 1000 frivilliga utvecklare arbetar med att
-upprätthålla Debians höga kvalité.
+upprätthålla Debians höga kvalitet.
 %
 }
 
@@ -41,7 +44,7 @@ upprätthålla Debians höga kvalité.
 %
 Som det fastslås i Debians sociala kontrakt består Debian helt och hållet av
 fri programvara. Med fri programvara menar 
-vi inte bara ingen kostnad utan även friheten att använda
+vi inte bara att den är kostnadsfri, utan även friheten att använda
 den hur och var du vill, dela med dig av den till dina vänner, läsa och 
 modifiera källkoden och distribuera dessa förändringar till andra personer.
 %
@@ -54,7 +57,7 @@ modifiera källkoden och distribuera dessa förändringar till andra personer.
 Debians paketeringssystem tillåter en smärtfri övergång till nya
 programversioner utan att behöva installera om från början
 och utan att förlora programmens gamla inställningar.
-Beroenden mellan program hanteras automatiskt: Om ett paket som
+Beroenden mellan program hanteras automatiskt: Om ett programpaket
 du vill installera kräver ett annat paket, tas detta om hand
 automatiskt av installationsprogrammet. 
 Du kan installera och uppgradera
@@ -70,8 +73,8 @@ Debian är säkert från början och är enkelt justerbart i fall där extrem säkerhet
 krävs. Det är enkelt att installera ett Debian-system med mycket lite programvara.
 När ett säkerhetsproblem upptäcks släpper Debians säkerhetsteam ett paket med
 säkerhetsfixar, vanligtvis inom 48 timmar. Med hjälp av Debians pakethanteringssystem
-är det enkelt för en icke erfaren administratör att hålla säkerheten uppdaterad.
-Den här tjänsten är tillgänglig gratis för alla.
+är det enkelt för en oerfaren administratör att hålla systemets säkerhet uppdaterad.
+Denna tjänst är tillgängligt gratis för alla.
 %
 }
 
@@ -82,36 +85,37 @@ Den här tjänsten är tillgänglig gratis för alla.
 Tack vare Debianutvecklarnas personliga engagemang är paketkvaliteten oöverträffad.
 För att hålla denna höga standard finns även Debians policymanual, som beskriver
 exakt hur paket skall bete sig och interagera med systemet. Ett paket som bryter
-mot policyn kommer inte bli inkluderat i den officiella stabila Debian-utgåvan.
+mot policyn kommer inte att inkluderas i den officiella stabila Debian-utgåvan.
 Debians bugghanteringssytem hjälper även det med kvalitetssäkringen. Debian gömmer inte
 problem. 
 Debian har inget kommersiellt tryck på sig och kommer inte släppa en
-ny ostabil version bara för att marknaden kräver det.
+ny potentiellt instabil version bara för att marknaden kräver det.
 %
 }
 
-\def\IncludedCaption{Inkluderat med Debian GNU/Linux}
+\def\IncludedCaption{Inkluderas i Debian GNU/Linux}
 
 \def\Included{
 %
-Den totala Debian GNU/Linux-distributionen består av mer än 10 CD-skivor. Dessa
-CD-skivor innehåller endast de arkitekturberoende färdigkompilerade programmen; du kommer behöva mer CD-skivor för källkoden.
+Den fullständiga Debian GNU/Linux-distributionen består av mer än 10 CD-skivor. Dessa
+CD-skivor innehåller endast de arkitekturberoende färdigkompilerade programmen; du
+kommer behöva fler CD-skivor för källkoden.
 De innehåller bl.a:
 %
 }
 
 \def\Utilities{
 %
-den kompletta uppsättningen GNU-verktyg, editorer (emacs, vi~\ldots),
-nätverksklienter (chat, fildelning,~\ldots), webbläsare (inkluderat Mozillawebbläsarna), säkerhetsprogram
-(gpg, ssh~\ldots), e-postprogram och alla möjliga andra verktyg du kan
+den kompletta uppsättningen GNU-verktyg, editorer (emacs, vi, m.fl.),
+nätverksklienter (chat, fildelning, m.fl.), webbläsare (inklusive Mozillawebbläsarna), säkerhetsprogram
+(gpg, ssh, m.fl.), e-postprogram och alla möjliga andra verktyg du kan
 tänka dig.
 %
 }
 
 \def\Networking{
 %
-stöd för de flesta nätverksprotokoll (PPP, IPv4, IPv6, SMB nätverksplatser,~\ldots)
+stöd för de flesta nätverksprotokoll (PPP, IPv4, IPv6, SMB nätverksplatser, m.fl.)
 %
 }
 
@@ -146,14 +150,15 @@ Photoshop\tm)
 
 \def\Office{
 %
-en komplett uppsättning kontorsprogram inluderande de från OpenOffice.org, 
+\hyphenation{OpenOffice}
+en komplett uppsättning kontorsprogram inklusive de från OpenOffice.org, 
 Gnumetric och andra kalkylprogram, WYSIWYG-editorer, kalendrar
 %
 }
 
 \def\Databases{
 %
-Relationsdatabaser som PostgreSQL och MySQL med
+relationsdatabaser som PostgreSQL och MySQL med
 utvecklingsverktyg (applikationsservrar, skriptspråk för servern)
 %
 }
@@ -165,15 +170,15 @@ utvecklingsverktyg (applikationsservrar, skriptspråk för servern)
 Gå med din webbläsare till \boxurl{http://www.debian.org}. För mer information
 eller hjälp kan du gå in i IRC-kanalen \#debian på \boxurl{irc.debian.org} eller
 prenumerera på en av Debians sändlistor. Gå till \boxurl{http://www.debian.org/MailingLists/subscribe} för
-mer instruktioner. Det finns även många icke-officiella användarforum.
+vidare instruktioner. Det finns även många icke-officiella användarforum.
 %
 }
 
 \def\Install{
 %
 För att installera Debian GNU/Linux kan du ladda ner disketter
-från \boxurl{ftp://ftp.debian.org} och sedan installera via nätverket. Debian säljer 
-inte själva CD-skivor, men tillhandahåller officiella CD-avbildningar som 
+från \boxurl{ftp://ftp.debian.org} och sedan installera via nätverket eller beställa/bränna några CD-skivor.
+Debian säljer inte själva CD-skivor, men tillhandahåller officiella CD-avbildningar som 
 ett flertal försäljare reproducerar och säljer. För mer information gå till \boxurl{http://www.debian.org/CD/}.
 %
 }
@@ -191,3 +196,4 @@ Detta flygblad gjordes med hjälp av \LaTeX\ och ett Debiansystem.
 
 % EPS file in sponsors/ subdirectory
 \def\SponsorLogo{credativ}
+
