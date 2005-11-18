@@ -59,6 +59,11 @@ language.tex, where "language" is the local name of your language
 file to this directory (e.g. by sending a mail to joey@debian.org or
 debian-flyers-devel@lists.alioth.debian.org).
 
+Then modify the mkconfig file and add the translation of your local language to
+english, like this:
+
+    YourLocalLanguage)   echo "EnglishTranslation";;
+
 When you add a new translation, please be careful with the size of
 your translation.  If the text is too long, an empty page is inserted
 by LaTeX and the text doesn't fit on the page.  In such a case, please
@@ -69,7 +74,4 @@ See also
 --------
 
 http://debian-flyers.alioth.debian.org/
-
-An unofficial but more frequently updated webpage is at
-http://mdcc.cx/~joostvb/flyer/ .
 

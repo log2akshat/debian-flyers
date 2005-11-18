@@ -16,6 +16,7 @@ english()
     dansk)	echo "danish";;
     deutsch)	echo "german";;
     english)	echo "english";;
+    espanyol)	echo "spanish";;
     francaise)	echo "french";;
     italiano)	echo "italian";;
     nederlands)	echo "dutch";;
