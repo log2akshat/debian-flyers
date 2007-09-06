@@ -118,7 +118,7 @@ check:
 
 
 upload: flyer.png all.ps.gz all.pdf
-	scp $? haydn.debian.org:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers/
+	scp $? alioth.debian.org:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers/
 
 clean:
 	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
