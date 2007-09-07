@@ -1,6 +1,5 @@
-# $Id: TODO,v 1.11 2007/09/06 04:23:17 joostvb Exp $
+# $Id: TODO,v 1.12 2007/09/07 02:28:56 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/TODO,v $
 
-- Add a last-revised date to generated .ps.  E.g. by fiddling with $ Date: $.
 - Review copyrights in translations.
 - Add more translations.
