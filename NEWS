@@ -1,9 +1,15 @@
-# $Id: NEWS,v 1.5 2007/09/03 21:20:16 joostvb Exp $
+# $Id: NEWS,v 1.6 2008/10/12 19:44:38 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/NEWS,v $
 
 debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
+
+- Changes made in 2005-11 - 2008-10:
+  * See the CVS commit logs. (FIXME)
+
+- Changes made in 2005-06:
+  * See the CVS commit logs. (FIXME)
 
 - Changes made in May 2005:
   * Thanks to contributions from Lars Bjarby, Marco Carvalho and
