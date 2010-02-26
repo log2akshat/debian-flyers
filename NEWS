@@ -1,9 +1,29 @@
-# $Id: NEWS,v 1.6 2008/10/12 19:44:38 joostvb Exp $
+# $Id: NEWS,v 1.7 2010/02/26 05:15:57 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/NEWS,v $
 
 debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
+
+- Changes made in 2010-02-23 - 2010-02-26
+ [ Changes by Joost van Baal ]
+ * NEWS: update this file
+ * deutsch.tex: we now list 3 arbeitsumgebungen
+ [ Changes by Alexander "Tolimar" Reichle-Schmehl ]
+ * layout.tex: Put the date of create in the footer in a parbox, so
+   it won't collide with the the sponsor information.
+ * deutsch.tex, enlish.tex, sponsors/ffis-logo-color.eps,
+   sponsors/ffis.eps: Add and use ffis Logo
+ * deutsch.tex: Update german translation
+ * english.tex:
+   + Add lxde; it gained quite some popularity and shows that we support the
+     smaller machines, too.
+   + Technically we don't ship Firefox
+   + Adjust number of optical media
+   + Add USB-Stick to boot media
+   + Add ARM to have one "embedded" architecture in the list
+   + Remove alpha, add "Intel EM64T" as "AMD64" is sometimes quite confusing
+   + Update number of packages
 
 - Changes made in 2005-11 - 2008-10:
   * See the CVS commit logs. (FIXME)
