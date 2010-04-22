@@ -121,11 +121,11 @@ upload: flyer.png all.ps.gz all.pdf
 	scp $? alioth.debian.org:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers/
 
 clean:
-	-for I in ps eps dvi aux log jpg; do \
+	-for I in ps pdf eps dvi aux log jpg; do \
 		rm -f $(base)."$$I"; \
 		rm -f all."$$I"; \
 	done
-	-rm -f $(base)-*.ps *~
+	-rm -f $(base)-*.ps $(base)-*.pdf *~
 	-rm -f config.tex
 
 ChangeLog: NEWS
