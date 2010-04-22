@@ -121,9 +121,11 @@ upload: flyer.png all.ps.gz all.pdf
 	scp $? alioth.debian.org:/org/alioth.debian.org/chroot/ftproot/pub/debian-flyers/
 
 clean:
-	-rm -f $(base).{ps,eps,dvi,aux,log,jpg} *~
-	-rm -f all.{ps,eps,dvi,aux,log,jpg}
-	-rm -f $(base)-*.ps
+	-for I in ps eps dvi aux log jpg; do \
+		rm -f $(base)."$$I"; \
+		rm -f all."$$I"; \
+	done
+	-rm -f $(base)-*.ps *~
 
 ChangeLog: NEWS
 	cvs2cl --accum --prune
