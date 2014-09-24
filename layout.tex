@@ -27,15 +27,32 @@
 \vspace*{\stretch{1}}
 \vspace*{-14mm}
 \hbox to\textwidth{%
-  \hbox to0.44\textwidth{%
-    \null\hspace{\Separation} \parbox{0.42\textwidth}{\MadeWith} \hfill}
-  \hfil%
-  \parbox{0.40\textwidth}{\raggedleft%
-      \SponsoredBy \\
+  \leavevmode\hspace{\Separation}%
+  \parbox{0.44\textwidth}{\raggedright
+      \MadeWith
+  }
+  \parbox{0.28\textwidth}{\raggedleft
+      \SponsoredBy\
       \expandafter\boxurl\SponsorURL
   }
   \hspace*{0.5\Separation}\null
-  \lower8.5pt\hbox{\includegraphics[width=0.1\textwidth]{\SponsorLogo}}
+  \lower8.5pt\hbox{\includegraphics[width=0.25\textwidth, height=0.85cm, keepaspectratio=true]{\SponsorLogo}}
+}
+\vspace*{1mm}
+}
+
+\def\SponsorDonations{%
+\vspace*{\stretch{1}}
+\vspace*{-14mm}
+\hbox to\textwidth{%
+  \leavevmode\hspace{\Separation}%
+  \parbox{0.42\textwidth}{\raggedright
+      \MadeWith
+  }
+  \hspace*{0.02\textwidth}\null
+  \parbox{0.53\textwidth}{\raggedleft
+      \SponsoredBy
+  }
 }
 \vspace*{1mm}
 }
@@ -131,5 +148,6 @@
 
 \end{minipage}
 
-\Sponsor
+%\Sponsor
+\SponsorDonations
 
