@@ -1,9 +1,15 @@
-# $Id: NEWS,v 1.7 2010/02/26 05:15:57 joostvb Exp $
+# $Id: NEWS,v 1.8 2014/09/27 11:10:54 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/NEWS,v $
 
 debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
+
+- Changes made in 2014-09
+ [ Changes by Joost van Baal ]
+ * nederlands.tex,english.tex: apply patch contributed by Anne Bezemer in
+   Message-ID: <Pine.LNX.4.64.1310232203350.1126@wormhole.robuust.nl>, Wed, 2 3
+   Oct 2013
 
 - Changes made in 2010-02-23 - 2010-02-26
  [ Changes by Joost van Baal ]
