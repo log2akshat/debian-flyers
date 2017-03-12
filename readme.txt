@@ -1,23 +1,30 @@
-For convenience Joey put these files into a cvs repository which is
+We have put these files into a git repository which is
 publically available.
 
 Through the web:
 
-  http://cvs.alioth.debian.org/cgi-bin/cvsweb.cgi/?cvsroot=debian-flyers
+https://anonscm.debian.org/cgit/debian-flyers/debian-flyers.git/
 
-Through read/write CVS (if you have an Alioth account in the
+Through read/write git (if you have an Alioth account in the
 debian-flyers group)
 
-   cvs -d :ext:<username>@alioth.debian.org:/cvsroot/debian-flyers co general
+   git clone git+ssh://git.debian.org/git/debian-flyers/debian-flyers.git
 
-Through anonymous read-only CVS:
+Through anonymous read-only:
 
-   cvs -d:pserver:anonymous@cvs.alioth.debian.org:/cvsroot/debian-flyers login
-   <enter>
-   cvs -z3 -d:pserver:anonymous@cvs.alioth.debian.org:/cvsroot/debian-flyers co general
+   git clone https://anonscm.debian.org/git/debian-flyers/debian-flyers.git
 
 Compiling the flyer
 -------------------
+
+Depending on the target languages, you may need to install these packages:
+
+texlive-lang-german 
+texlive-lang-portuguese 
+texlive-lang-french  
+texlive-lang-italian 
+texlive-lang-european
+
 
 Please use the Makefile which provides several targets for you:
 
