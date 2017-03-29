@@ -5,6 +5,14 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+- Changes made in 2017-03
+ [ Changes made by Laura Arjona Reina ]
+ * The Debian flyers repository converted from CVS to git, for r/w access,
+   run "git clone git+ssh://git.debian.org/git/debian-flyers/debian-flyers.git",
+   readonly access available via
+   https://anonscm.debian.org/cgit/debian-flyers/debian-flyers.git .
+
+
 - Changes made in 2017-02 - 2017-03
  [ Changes by Joost van Baal-Ilić ]
  * deutsch.tex: import patch by Sven Guckes, from private communication
