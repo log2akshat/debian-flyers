@@ -5,6 +5,7 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+
 - Changes made in 2017-03
  [ Changes made by Laura Arjona Reina ]
  * The Debian flyers repository converted from CVS to git, for r/w access,
@@ -15,6 +16,9 @@ Run "make ChangeLog" to see detailed per-file info.
      git. Adding the list of texlive packages that may be needed.
    - hexagonal-sticker/Makefile, hexagonal-sticker/hexagonal.svg: Add
      hexagonal sticker, by Elena Grandi
+  [ Changes made by Joost van Baal-Ilić ]
+  * francaise.tex: supress sponsor message: mitch is currently not sponsoring;
+    text too large to fit on page with sponsor
 
 
 - Changes made in 2017-02 - 2017-03
