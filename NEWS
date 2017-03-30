@@ -11,6 +11,10 @@ Run "make ChangeLog" to see detailed per-file info.
    run "git clone git+ssh://git.debian.org/git/debian-flyers/debian-flyers.git",
    readonly access available via
    https://anonscm.debian.org/cgit/debian-flyers/debian-flyers.git .
+   - readme.txt: Update readme.txt to reflect that the repo now is in
+     git. Adding the list of texlive packages that may be needed.
+   - hexagonal-sticker/Makefile, hexagonal-sticker/hexagonal.svg: Add
+     hexagonal sticker, by Elena Grandi
 
 
 - Changes made in 2017-02 - 2017-03
