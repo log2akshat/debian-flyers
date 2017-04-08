@@ -6,6 +6,13 @@ debian-flyers/general NEWS file
 Run "make ChangeLog" to see detailed per-file info.
 
 
+- Changes made in 2017-04
+ [ Changes made by Joost van Baal-Ilić ]
+ * francaise.tex: apply patch contributed by JP Guillonneau in Message-ID
+   <20170407084716.13dfe497@debian>, Fri, 7 Apr 2017, proofread by the
+   debian-l10n-french mailing list contributors.
+
+
 - Changes made in 2017-03
  [ Changes made by Laura Arjona Reina ]
  * The Debian flyers repository converted from CVS to git, for r/w access,
