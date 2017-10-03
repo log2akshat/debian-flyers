@@ -1,0 +1,23 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage{graphicx}
+\usepackage[usenames]{xcolor}
+\usepackage[english, italian]{babel}
+
+\usepackage{fontspec}
+
+\usepackage{wallpaper}
+\usepackage{multicol}
+
+\pagestyle{empty}
+
+\frenchspacing
+
+\definecolor{debian}{RGB}{168,0,48}
+
+\newcommand{\redbox}[1]{
+    \colorbox{debian}{\color{white}{
+        \textsf{\LARGE #1}
+    }}
+}
+
