@@ -1,9 +1,11 @@
-# $Id: NEWS,v 1.9 2017/03/03 03:07:29 joostvb Exp $
-# $Source: /cvsroot/debian-flyers/general/NEWS,v $
-
 debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
+
+
+- Changes made in 2017-10
+ [ Changes made by Elena ``of Valhalla'' Grandi ]
+ * social_contract/*: New flyer: social contract in English and Italian
 
 
 - Changes made in 2017-04
@@ -11,6 +13,8 @@ Run "make ChangeLog" to see detailed per-file info.
  * francaise.tex: apply patch contributed by JP Guillonneau in Message-ID
    <20170407084716.13dfe497@debian>, Fri, 7 Apr 2017, proofread by the
    debian-l10n-french mailing list contributors.
+ * francaise.tex: did convert back from utf8 to Latin-1; apparently LaTeX
+   groks Latin-1 better. (recode utf8..Latin-1 francaise.tex)
 
 
 - Changes made in 2017-03
