@@ -1,3 +1,9 @@
+The Debian Flyer
+================
+
+VCS access
+----------
+
 We have put these files into a git repository which is
 publically available.
 
@@ -14,6 +20,7 @@ Through anonymous read-only:
 
    git clone https://anonscm.debian.org/git/debian-flyers/debian-flyers.git
 
+
 Compiling the flyer
 -------------------
 
@@ -24,7 +31,6 @@ texlive-lang-portuguese
 texlive-lang-french  
 texlive-lang-italian 
 texlive-lang-european
-
 
 Please use the Makefile which provides several targets for you:
 
@@ -57,6 +63,7 @@ Please use the Makefile which provides several targets for you:
 
        Cleans up the directory, removes all compiled files.
 
+
 Adding a translation
 --------------------
 
@@ -81,4 +88,3 @@ See also
 --------
 
 http://debian-flyers.alioth.debian.org/
-
