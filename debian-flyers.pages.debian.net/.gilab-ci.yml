@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  artifacts:
+    paths:
+      - "public"
+  script:
+    - mkdir -v .public
+    - cp -fv pages/* .public/
+    - mv -v .public public
+
