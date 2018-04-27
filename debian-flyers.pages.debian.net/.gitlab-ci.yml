@@ -8,5 +8,5 @@ pages:
       - "public"
   script:
     - mkdir -v .public
-    - cp -fv pages/* .public/
+    - cp -fv debian-flyers.pages.debian.net/pages/* .public/
     - mv -v .public public
