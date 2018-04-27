@@ -9,16 +9,16 @@ publically available.
 
 Through the web:
 
-https://anonscm.debian.org/cgit/debian-flyers/debian-flyers.git/
+https://salsa.debian.org/debian/debian-flyers
 
-Through read/write git (if you have an Alioth account in the
-debian-flyers group)
+Through read/write git (if you have a Salsa account in the
+"debian-flyers" or "debian" groups)
 
-   git clone git+ssh://git.debian.org/git/debian-flyers/debian-flyers.git
+   git clone git@salsa.debian.org:debian/debian-flyers.git
 
 Through anonymous read-only:
 
-   git clone https://anonscm.debian.org/git/debian-flyers/debian-flyers.git
+   git clone https://salsa.debian.org/debian/debian-flyers.git
 
 
 Compiling the flyer
@@ -87,4 +87,4 @@ shorten the translation somehow without changing the meaning too much.
 See also
 --------
 
-http://debian-flyers.alioth.debian.org/
+https://debian.pages.debian.net/debian-flyers/
