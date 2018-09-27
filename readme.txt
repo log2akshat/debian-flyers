@@ -70,8 +70,8 @@ Adding a translation
 To add a new translation to this general flyer, copy english.tex into
 language.tex, where "language" is the local name of your language
 (i.e. francaise for french, deutsch for german etc.).  Please add the
-file to this directory (e.g. by sending a mail to joey@debian.org or
-debian-flyers-devel@lists.alioth.debian.org).
+file to this directory (e.g. by sending a mail to
+debian-flyers-devel@alioth-lists.debian.net).
 
 Then modify the mkconfig file and add the translation of your local language to
 english, like this:
