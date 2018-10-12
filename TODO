@@ -1,10 +1,10 @@
 # git salsa.debian.org:debian/debian-flyers.git
 
-- Makefile: do not call 'latex' but 'pdflatex' to generate pdf's.  don't generate pure
-  .ps anymore.  thanks _jwilk @ #debian-til irc.oftc.net 12 okt 2018 for
-  comments: "let's not create impression that PS is a format that should be used
-  these days".  The state of GhostScript--the only PostScript interpreter in
-  Debian--is bad, security-wise.
+- Makefile: do not call 'latex' but 'latexmk -pdf' (Package: latexmk) to
+  generate pdf's.  don't generate pure .ps anymore.  thanks ansgar and _jwilk @
+  #debian-til irc.oftc.net 12 okt 2018 for comments: "let's not create impression
+  that PS is a format that should be used these days".  The state of
+  GhostScript--the only PostScript interpreter in Debian--is bad, security-wise.
 
 - Review copyrights in translations.
 - Add more translations.
