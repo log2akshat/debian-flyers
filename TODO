@@ -1,6 +1,4 @@
-# $Id: TODO,v 1.12 2007/09/07 02:28:56 joostvb Exp $
-# $Source: /cvsroot/debian-flyers/general/TODO,v $
-
+# git salsa.debian.org:debian/debian-flyers.git
 
 - Makefile: do not call 'latex' but 'pdflatex' to generate pdf's.  don't generate pure
   .ps anymore.  thanks _jwilk @ #debian-til irc.oftc.net 12 okt 2018 for
