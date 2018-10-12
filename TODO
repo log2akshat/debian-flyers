@@ -1,5 +1,12 @@
 # $Id: TODO,v 1.12 2007/09/07 02:28:56 joostvb Exp $
 # $Source: /cvsroot/debian-flyers/general/TODO,v $
 
+
+- Makefile: do not call 'latex' but 'pdflatex' to generate pdf's.  don't generate pure
+  .ps anymore.  thanks _jwilk @ #debian-til irc.oftc.net 12 okt 2018 for
+  comments: "let's not create impression that PS is a format that should be used
+  these days".  The state of GhostScript--the only PostScript interpreter in
+  Debian--is bad, security-wise.
+
 - Review copyrights in translations.
 - Add more translations.
