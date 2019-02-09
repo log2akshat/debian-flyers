@@ -30,6 +30,7 @@ texlive-lang-german
 texlive-lang-portuguese 
 texlive-lang-french  
 texlive-lang-italian 
+texlive-lang-spanish
 texlive-lang-european
 
 Please use the Makefile which provides several targets for you:
