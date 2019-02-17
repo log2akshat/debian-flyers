@@ -1,5 +1,5 @@
 
-LANGFILES=sc_en.tex sc_it.tex
+LANGFILES=sc_en.tex sc_it.tex sc_fr.tex
 LAYOUTFILES=layout.tex preamble.tex social_contract.tex
 
 all: social_contract.pdf

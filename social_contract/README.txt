@@ -10,6 +10,7 @@ Build dependencies include:
    texlive-xetex
    texlive-lang-english
    texlive-lang-italian
+   texlive-lang-french
    librsvg2-bin
 
 To build a PDF of the flyer, in all available languages, just run make.
