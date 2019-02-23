@@ -22,3 +22,5 @@ To add a new translation to this flyer copy sc_en.tex to sc_$LANG.tex.
 Then you need to append this file to the LANGFILES= line in the Makefile,
 and add two lines to social_contract.tex with includes for your language and
 another copy of the layout.
+
+And to finish, you need to add your language in the preamble.tex file, section 'babel'.
