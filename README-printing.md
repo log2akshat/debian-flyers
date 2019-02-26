@@ -1,4 +1,4 @@
-See readme.txt for general information.
+See [README.md](README.md) for general information.
 
 Professional offset printing presses need color separated files, in order to
 create one printing plate per color: cyan, magenta, yellow, and black (CMYK).
