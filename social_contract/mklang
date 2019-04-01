@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# This script is called by the Makefile file to generate '.tex' file in the selected language
+
+if [ $# -lt 1 ] ; then
+    echo "Error: Not enough parameters given"
+    exit 1
+fi
+
+output_file="social_contract_${1}.tex"
+
+printf '
+\\input{preamble}
+
+\\begin{document}
+
+\\input{sc_%s}
+\\input{layout}
+
+\\end{document}\n' $1 > $output_file
+
