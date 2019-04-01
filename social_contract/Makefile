@@ -9,7 +9,6 @@ openlogo-nd-alpha.pdf:
 
 social_contract.pdf: openlogo-nd-alpha.pdf ${LANGFILES} ${LAYOUTFILES}
 	xelatex social_contract.tex
-	xelatex social_contract.tex
 
 dist:
 	tar cJf ../social_contract.tar.xz --exclude="*.pdf" \
