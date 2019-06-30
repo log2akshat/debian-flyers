@@ -33,6 +33,8 @@ git clone https://salsa.debian.org/debian/debian-flyers.git
 Compiling the flyer
 -------------------
 
+## Dependencies
+
 Depending on the target languages, you may need to install these packages:
 
 + texlive-lang-german 
@@ -42,7 +44,13 @@ Depending on the target languages, you may need to install these packages:
 + texlive-lang-spanish
 + texlive-lang-european
 
-Please use the Makefile which provides several targets for you:
+## Automatic build
+
+Just run `update_all_website_flyers.sh` bash script to make all flyers and move all files in the corect directories
+
+## Manual build
+
+Please use the **Makefile** which provides several targets for you:
 
 + Compiles the flyer with both languages set in the Makefile.
 
@@ -103,13 +111,19 @@ Please use the Makefile which provides several targets for you:
 Adding a translation
 --------------------
 
-To add a new translation to this general flyer, copy `english.tex` into
-`language.tex`, where **language** is the local name of your language
-(i.e. `francaise` for **french**, `deutsch` for **german** etc.).  Please add the
-file to this directory (e.g. by sending a mail to
-**debian-flyers-devel@alioth-lists.debian.net**).
+To add a new translation to this general flyer:
 
-Then modify the `mkconfig` file and add the translation of your local language to
+- notify thee **Debian Flyers team** by sending a mail to
+**debian-flyers-devel@alioth-lists.debian.net**
+
+- copy `english.tex` into `language.tex`, where **language** is the local name
+of your language (i.e. `francaise` for **french**, `deutsch` for **german**
+etc.).
+
+- update the `update_all_website_flyers.sh` script in the section **list_lang**
+with this format : `fr:francaise`
+
+- modify the `mkconfig` file and add the translation of your local language to
 english, like this:
 
     YourLocalLanguage)   echo "EnglishTranslation";;
