@@ -24,8 +24,8 @@ DEBUG=${DEBUG:=false}
 make all.ps all.pdf
 
 # Move "all in one" to the final directory
-mv all.ps all.pdf debian-flyers.pages.debian.net/files/
-mv all.pdf debian-flyers.pages.debian.net/files/
+mv all.ps all.pdf pages.debian.net/files/
+mv all.pdf pages.debian.net/files/
 
 ################################################################################
 # Update jpg English flyer (flyer.jpg)
@@ -33,7 +33,7 @@ mv all.pdf debian-flyers.pages.debian.net/files/
 make flyer.jpg
 
 # Move English flyer.jpg to the final directory
-mv flyer.jpg debian-flyers.pages.debian.net/files/
+mv flyer.jpg pages.debian.net/files/
 
 ################################################################################
 # Update PostScript and PDF flyers for each languages
@@ -67,8 +67,8 @@ for lang in $list_lang ; do
     make lang1=english lang2=$name flyer.ps flyer.pdf
 
     # Move and rename the flyers to the final directory
-    mv flyer.ps debian-flyers.pages.debian.net/files/flyer_en_${code}.ps
-    mv flyer.pdf debian-flyers.pages.debian.net/files/flyer_en_${code}.pdf
+    mv flyer.ps pages.debian.net/files/flyer_en_${code}.ps
+    mv flyer.pdf pages.debian.net/files/flyer_en_${code}.pdf
 
 done
 
@@ -79,7 +79,7 @@ cd social_contract/
 make
 
 # Move to final directory
-mv social_contract.pdf ../debian-flyers.pages.debian.net/files/
+mv social_contract.pdf ../pages.debian.net/files/
 
 # Clean the social_contract directory
 make clean
