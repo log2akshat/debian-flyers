@@ -1,166 +1,203 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Debian Flyers</title>
   <link rev="made" href="mailto:debian-flyers-devel@alioth-lists.debian.net">
   <meta name="Description" content="Debian flyers leaflets">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <style type="text/css">
-    table {
-      padding: 10;
+    body > .container {
+      padding: 60px 15px 0;
     }
-    .tableCenter td {
-      text-align: center;
+    .table {
+      margin: 0 auto;
+      width: 70%;
     }
   </style>
 </head>
+
 <body>
-<h1>Debian Flyers</h1>
 
-<p>This project maintains several flyers or leaflets for the Debian project.</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Debian Flyers</a>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://salsa.debian.org/debian/debian-flyers">Get sources in Salsa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/debian-flyers-devel">debian-flyers-devel mailing list</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<p>You can <a href="https://salsa.debian.org/debian/debian-flyers">retrieve or browse the
-full source files</a> used for building multilingual flyers.<br>
-Currently, <b>Debian Flyers</b> are available in 9 languages and <b>Debian Social Contract + DFSG</b> in 3 languages.<br>
-Translating the general flyer to a new language is as easy as translating the
-<b>english.tex</b> file and following the building instructions in the <a
-href="https://salsa.debian.org/debian/debian-flyers/blob/master/README.md">README.md
-file</a>.
+<div class="container">
 
-<p>We try to offer reasonably up to date copies of typesetted flyers.</p>
-
-<hr>
-
-<h3>Debian Flyers</h3>
-<table>
-<tr>
- <th>Languages</th>
- <th>Formats</th>
-</tr>
-<tr>
-<td>English</td>
-<td><a href="./files/flyer.jpg">Debian flyer, JPG</a></td>
-</tr>
-<tr>
-<td>All-in-one</td>
-<td><a href="./files/all.ps">Debian flyer, PostScript</a> - <a href="./files/all.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Danish</td>
-<td><a href="./files/flyer_en_da.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_da.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Dutch</td>
-<td><a href="./files/flyer_en_nl.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_nl.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/French</td>
-<td><a href="./files/flyer_en_fr.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_fr.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/German</td>
-<td><a href="./files/flyer_en_de.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_de.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Italian</td>
-<td><a href="./files/flyer_en_it.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_it.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Portugese</td>
-<td><a href="./files/flyer_en_pt.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_pt.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Spanish</td>
-<td><a href="./files/flyer_en_es.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_es.pdf">Debian flyer, PDF</a></td>
-</tr>
-<tr>
-<td>English/Swedish</td>
-<td><a href="./files/flyer_en_sv.ps">Debian flyer, PostScript</a> - <a href="./files/flyer_en_sv.pdf">Debian flyer, PDF</a></td>
-</tr>
-</table>
-
-<hr>
-
-<h3>Debian Social Contract + DFSG</h3>
-<table>
-  <tr>
-    <th>Languages</th>
-    <th>Formats</th>
-  </tr>
-  <tr>
-    <td>All-in-one</td>
-    <td><a href="./files/social_contract.pdf">PDF</a></td>
-  </tr>
-  <tr>
-    <td>English</td>
-    <td><a href="./files/social_contract_en.pdf">PDF</a></td>
-  </tr>
-  <tr>
-    <td>French</td>
-    <td><a href="./files/social_contract_fr.pdf">PDF</a></td>
-  </tr>
-  <tr>
-    <td>Italian</td>
-    <td><a href="./files/social_contract_it.pdf">PDF</a></td>
-  </tr>
-</table>
-
-<hr>
-
-<h3>Debian Hexagonal Sticker - PNG or SVG format</h3>
-<table class="tableCenter">
-  <tr>
-    <td>
+  <div class="jumbotron text-center">
+    <h1>Debian Flyers</h1>
+    <p>This project maintains several flyers or leaflets for the Debian project.</p>
+  </div>
+  
+  <p>You can <a href="https://salsa.debian.org/debian/debian-flyers">retrieve or browse the
+    full source files</a> used for building multilingual flyers.<br>
+    Currently, <b>Debian Flyers</b> are available in 9 languages and <b>Debian Social Contract and DFSG</b> in 3 languages.<br>
+    Translating the general flyer to a new language is as easy as translating the
+    <b>english.tex</b> file and following the building instructions in the
+    <a href="https://salsa.debian.org/debian/debian-flyers/blob/master/README.md">README.md file</a>.
+  <p>We try to offer reasonably up to date copies of typesetted flyers.</p>
+  
+  <hr>
+  
+  <div class=" text-center">
+    <h2>Debian Flyers</h2>
+  </div>
+  
+  <table class="table table-hover col-sm-6">
+    <thead class="thead-dark">
+    <tr>
+      <th>Languages</th>
+      <th>Formats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>English</td>
+      <td><a href="./files/flyer.jpg">JPG</a></td>
+    </tr>
+    <tr>
+      <td>All-in-one</td>
+      <td><a href="./files/all.ps">PostScript</a> - <a href="./files/all.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Danish</td>
+      <td><a href="./files/flyer_en_da.ps">PostScript</a> - <a href="./files/flyer_en_da.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Dutch</td>
+      <td><a href="./files/flyer_en_nl.ps">PostScript</a> - <a href="./files/flyer_en_nl.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/French</td>
+      <td><a href="./files/flyer_en_fr.ps">PostScript</a> - <a href="./files/flyer_en_fr.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/German</td>
+      <td><a href="./files/flyer_en_de.ps">PostScript</a> - <a href="./files/flyer_en_de.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Italian</td>
+      <td><a href="./files/flyer_en_it.ps">PostScript</a> - <a href="./files/flyer_en_it.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Portugese</td>
+      <td><a href="./files/flyer_en_pt.ps">PostScript</a> - <a href="./files/flyer_en_pt.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Spanish</td>
+      <td><a href="./files/flyer_en_es.ps">PostScript</a> - <a href="./files/flyer_en_es.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English/Swedish</td>
+      <td><a href="./files/flyer_en_sv.ps">PostScript</a> - <a href="./files/flyer_en_sv.pdf">PDF</a></td>
+    </tr>
+  </table>
+  
+  <hr>
+  
+  <div class=" text-center">
+    <h2>Debian Social Contract and DFSG</h2>
+  </div>
+  
+  <table class="table table-hover col-sm-6">
+    <thead class="thead-dark">
+    <tr>
+      <th>Languages</th>
+      <th>Formats</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>All-in-one</td>
+      <td><a href="./files/social_contract.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>English</td>
+      <td><a href="./files/social_contract_en.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>French</td>
+      <td><a href="./files/social_contract_fr.pdf">PDF</a></td>
+    </tr>
+    <tr>
+      <td>Italian</td>
+      <td><a href="./files/social_contract_it.pdf">PDF</a></td>
+    </tr>
+    </tbody>
+  </table>
+  
+  <hr>
+  
+  <div class=" text-center">
+    <h2>Debian Hexagonal Sticker</h2>
+    <p> PNG or SVG format</p>
+  </div>
+  
+  <table class="table text-center col-sm-6">
+    <tr>
+      <td>
         <b>Standard</b><br>
         <a href="./files/hexagonal.png">PNG</a> or
         <a href="./files/hexagonal.svg">SVG</a><br>
         <br>
         <img src="./files/hexagonal.png" alt="hexagonal standard sticker">
-    </td>
-    <td>
+      </td>
+      <td>
         <b>People</b><br>
         <a href="./files/hexagonal-people.png">PNG</a> or
         <a href="./files/hexagonal-people.svg">SVG</a><br>
         <br>
         <img src="./files/hexagonal-people.png" alt="hexagonal people sticker">
-    </td>
-    <td>
+      </td>
+      <td>
         <b>Positive</b><br>
         <a href="./files/hexagonal-positive.png">PNG</a> or
         <a href="./files/hexagonal-positive.svg">SVG</a><br>
         <br>
         <img src="./files/hexagonal-positive.png" alt="hexagonal positive sticker">
-    </td>
-    <td>
+      </td>
+      <td>
         <b>Women</b><br>
         <a href="./files/hexagonal-women.png">PNG</a> or
         <a href="./files/hexagonal-women.svg">SVG</a><br>
         <br>
         <img src="./files/hexagonal-women.png" alt="hexagonal women sticker">
-    </td>
-  </tr>
-</table>
+      </td>
+    </tr>
+  </table>
+  
+  <hr>
+  
+  <div class=" text-center">
+    <h2>Mailing List</h2>
+    <p>We use the <a href="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/debian-flyers-devel">debian-flyers-devel</a>
+      mailing list for coordination.</p>
+  </div>
+  
+  <hr>
+  
+  <div class=" text-center">
+    <h2>Access</h2>
+    <p>This repository is writable by all the Debian Developers. If are not a DD and you need write access, 
+      send a mail to the
+      <a
+        href="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/debian-flyers-devel">debian-flyers-devel</a>
+      list.
+    </p>
+  </div>
 
-<hr>
+</div>
 
-<h3>Mailing List</h3>
-
-<p>We use the <a href="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/debian-flyers-devel">debian-flyers-devel</a>
-mailing list for coordination.</p>
-
-<hr>
-
-<h3>Access</h3>
-
-<p>This repository is writable by all the Debian Developers. If are not a DD and you need write access, 
-send a mail to the
-<a
-href="https://alioth-lists.debian.net/cgi-bin/mailman/listinfo/debian-flyers-devel">debian-flyers-devel</a>
-list.</p>
-
-<hr>
-
-<img src="./files/flyer.jpg" border='0' alt='The Debian flyer, in English'>
 </body>
 </html>
-
