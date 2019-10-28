@@ -55,8 +55,6 @@ Please use the **Makefile** which provides several targets for you:
 + Compiles the flyer with both languages set in the Makefile.
 
   ```bash
-  # Postscript format
-  make flyer.ps
   # PDF format
   make flyer.pdf
   ```
@@ -67,8 +65,6 @@ Please use the **Makefile** which provides several targets for you:
   support for the language to your TeX installation.)
 
   ```bash
-  # Postscript format
-  make lang1=nederlands lang2=english flyer.ps
   # PDF format
   make lang1=nederlands lang2=english flyer.pdf
   ```
@@ -83,8 +79,6 @@ Please use the **Makefile** which provides several targets for you:
 + Compiles all currently available translation into one file.
 
   ```bash
-  # Postscript format
-  make all.ps
   # PDF format
   make all.pdf
   ```
