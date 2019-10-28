@@ -1,5 +1,7 @@
 # git salsa.debian.org:debian/debian-flyers.git
 
+- document how to upload content in ./pages.debian.net to the right webserver.
+
 - Makefile: do not call 'latex' but 'latexmk -pdf' (Package: latexmk) to
   generate pdf's.  don't generate pure .ps anymore.  thanks ansgar and _jwilk @
   #debian-til irc.oftc.net 12 okt 2018 for comments: "let's not create impression
@@ -7,4 +9,5 @@
   GhostScript--the only PostScript interpreter in Debian--is bad, security-wise.
 
 - Review copyrights in translations.
+
 - Add more translations.
