@@ -2,10 +2,29 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+- Changes made 2019-02 - 2019-03
+ [ Changes made by Alban "zordhak" VIDAL ]
+ * : Adding social_contract.pdf file in English and Italian
+ * social_contract/sc_fr.tex: Adding French social contract
+   translated by Jean-Pierre Giraud, proofread by French l10n team
+ * francaise.tex: Fix contributors number
+ * dansk.tex, deutsch.tex, english.tex, espanyol.tex, francaise.tex,
+   italiano.tex, nederlands.tex, portugues.tex, svenska.tex: Change
+   number of packages on stretch
+
+
+- Changes made in 2018-04
+ [ Changes made by Laura Arjona Reina ]
+ * debian-flyers.pages.debian.net/*: add static site, with CI (.gilab-ci.yml)
+   (moving http://debian-flyers.alioth.debian.org/ to
+   https://debian-flyers.pages.debian.net)
+ * readme.txt: update URLs to point to Salsa instead of Alioth
+
 
 - Changes made in 2017-10
  [ Changes made by Elena ``of Valhalla'' Grandi ]
  * social_contract/*: New flyer: social contract in English and Italian
+ * italiano.tex: updated
 
 
 - Changes made in 2017-04
