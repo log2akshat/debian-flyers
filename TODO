@@ -1,5 +1,9 @@
 # git salsa.debian.org:debian/debian-flyers.git
 
+- add: rust, go, nodejs; remove objective c
+- add: usb (remove: cd?)
+- mention ubuntu, nof children distros
+
 - review english.tex; use e.g. a blurb from sponsorship flyer as published by
   debconf organisers to explain what debian is about.  do not assume reader
   knows what an 'operating system' or what 'source code' is.
