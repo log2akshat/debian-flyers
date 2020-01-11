@@ -1,7 +1,8 @@
 # git salsa.debian.org:debian/debian-flyers.git
 
-- add: rust, go, nodejs; remove objective c
-- add: usb (remove: cd?)
+- sync list of programming langs w/ updated one in english.tex; maybe add:
+  go, nodejs
+- add: usb (remove: cd?), cloud images?
 - mention ubuntu, nof children distros
 
 - review english.tex; use e.g. a blurb from sponsorship flyer as published by
@@ -11,6 +12,8 @@
 - ask for translation updates.
 
 - document how to upload content in ./pages.debian.net to the right webserver.
+
+- drop (or better: replace) \MyRCS and \rcsInfo.
 
 - Makefile: do not call 'latex' but 'latexmk -pdf' (Package: latexmk) to
   generate pdf's.  don't generate pure .ps anymore.  thanks ansgar and _jwilk @
