@@ -11,11 +11,11 @@ all: $(PNG_TARGETS) $(SVG_TARGETS)
 
 $(BUILDDIR)/%.png: $(SRCDIR)/%-source.svg
 	mkdir -p ${BUILDDIR}
-	inkscape $< -i layer3 -j -C -e $@ -w 181 -h 209 -y 0
+	inkscape $< -i layer3 -j -C -o $@ -w 181 -h 209 -y 0
 
 $(BUILDDIR)/%.svg: $(SRCDIR)/%-source.svg
 	mkdir -p ${BUILDDIR}
-	inkscape $< -i layer3 -j -C -l $@ -w 181 -h 209 -y 0
+	inkscape $< -i layer3 -j -C -l -o $@ -w 181 -h 209 -y 0
 
 clean:
 	rm -f ${BUILDDIR}/*.png ${BUILDDIR}/*.svg
