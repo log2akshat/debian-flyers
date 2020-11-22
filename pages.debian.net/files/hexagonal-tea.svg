@@ -55,19 +55,25 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
         <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:description>Alternative template for hexagon stickers based on https://terinjokes.github.io/StickerConstructorSpec/
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:description>Debian logo from https://www.debian.org/logos/
 
-Please note that if this text only refers to the sticker template, the licensing informations are probably wrong.</dc:description>
+Tea cup from https://freesvg.org/stylized-coffee-mug</dc:description>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
