@@ -131,5 +131,5 @@ really-clean: clean
 	-rm -f $(base)-*.pdf config.tex
 
 ChangeLog: NEWS
-	cvs2cl --accum --prune
+	git2cl >$@
 
