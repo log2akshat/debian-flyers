@@ -126,10 +126,9 @@ clean:
 		rm -f all."$$I"; \
 	done
 	-rm -f $(base)-*.ps *~
-	-rm -f config.tex
 
 really-clean: clean
-	-rm -f $(base)-*.pdf
+	-rm -f $(base)-*.pdf config.tex
 
 ChangeLog: NEWS
 	cvs2cl --accum --prune
