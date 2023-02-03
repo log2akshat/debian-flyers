@@ -1,6 +1,47 @@
-debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
+
+- Changes made 2023-02
+ [ Changes made by Joost van Baal-Ilić ]
+ * deutsch.tex: translate english cloud bit to german, strip stuff
+   about cd/dvd, make it fit on one page
+ * francaise.tex: strip some stuff off francaise in order to make it
+   fit on one page
+ * francaise.tex: Add updated french translation by Jean-Pierre
+   Giraud, in private communication, Wed, Feb 01, 2023 at 06:55:39PM
+   +0100, <5c4cd626765493eb2c8cad99af67ca078cb4ac0f.camel@free.fr>.
+   Merci Jean-Pierre!
+ * Makefile: we do git, no longer cvs...
+ * deutsch.tex: did convert back from utf8 to Latin-1; apparently
+   LaTeX groks Latin-1 better.  (recode utf8..Latin-1 deutsch.tex)
+ * deutsch.tex: Patch contributed by Mechtilde Stehmann
+   <mechtilde@d.o>, private communication, in Message-ID:
+   <0116dbee-6756-0daf-c04a-0fd09becc752@debian.org>, Date: Wed, 1 Feb
+   2023 17:03:24 +0100.  Thanks Mechtilde!
+ * Makefile: for some reason config.tex is kept in git: protect it
+ * Makefile: enable saving .pdf from cleanup by "clean" by doing e.g.
+   mv flyer.pdf flyer-de-fr.pdf, add new "really-clean" target
+
+
+- Changes made 2022-03
+ [ Changes made by Elena ``of Valhalla'' Grandi ]
+ * hexagonal-sticker/src/hexagonal-paws-source.svg,
+ pages.debian.net/files/hexagonal-paws.svg,
+ pages.debian.net/index.html: New sticker: a swirl made of paws.  A similar
+ swirl was originally used as the logo on the Debian homepage for April 1st
+ some years ago, but has been redrawn from scratch in svg.
+
+
+- Changes made 2020-11
+ [ Changes made by Elena ``of Valhalla'' Grandi ]
+ * pages.debian.net/files/hexagonal-tea.svg: Fix licensing info on
+   the tea hexagonal sticker
+ * hexagonal-sticker/Makefile: Fix stickers makefile for
+   inkscape >= 1.0
+ * hexagonal-sticker/src/hexagonal-tea-source.svg,
+   pages.debian.net/files/hexagonal-tea.svg,
+   pages.debian.net/index.html: New sticker design: tea
+
 
 - Changes made 2020-02
  [ Changes made by Alban Vidal ]
