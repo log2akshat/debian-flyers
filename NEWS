@@ -2,6 +2,28 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+- Changes made 2020-01
+ [ Changes made by Joost van Baal-Ilić ]
+ * config.tex, francaise.tex: make text fit on page
+ * nederlands.tex: make text fit on page, mention USB, sync list of
+   programming languages with english.tex
+ * english.tex: add info on usb and cloud images
+ * francaise.tex: sync list of programming languages with english.tex
+ * english.tex: update list of programming languages: s/C, C++, C#,
+   Objective-C/C (via both GCC and LLVM/Clang)/; s/Perl/both Perl5 and
+   Raku/ inspired by
+   https://www.debian.org/releases/buster/amd64/release-notes/ch-whats-new.en.html#newdistro
+ * config.tex, deutsch.tex, english.tex, francaise.tex,
+   nederlands.tex, portugues.tex, svenska.tex: aargh. not 9 but 10
+   released architectures!  (cf
+   https://www.debian.org/releases/buster/amd64/release-notes/ch-whats-new.en.html#idm120
+   ).
+ * dansk.tex, english.tex, espanyol.tex, francaise.tex,
+   nederlands.tex, portugues.tex, svenska.tex: not 10 but 9 released
+   architectures: amd64, i386, ARM (3), MIPS (2), Open Power, IBM
+   System z
+
+
 - Changes made 2019-11
  [ Changes made by Alban VIDAL ]
  * hexagonal-sticker/src/hexagonal-*.svg: Update broken symlinks -
