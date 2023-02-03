@@ -2,6 +2,22 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+- Changes made 2020-02
+ [ Changes made by Alban Vidal ]
+ * pages.debian.net/index.html: Adding Debian Cube to public page
+ * cube/cube_*.svg, pages.debian.net/files/cube_*.svg: [skip ci] Move cube
+   files to public directory
+ [ Changes made by Paulo Henrique de Lima Santana (phls) <phls@debian.org>
+ * cube/cube_involvend_curves_ptbr.svg, cube/cube_involvend_ptbr.svg:
+   Add cube in portuguese
+ * cube/cube_involvend.svg, cube/cube_involvend_curves.svg: Add cube
+   get involved done by Valessio
+ * english.tex: Updates in english version
+ * pages.debian.net/files/all.ps, pages.debian.net/files/flyer_*.ps:
+   Update portuguese translation
+ * portugues.tex: Update portuguese translation
+
+
 - Changes made 2020-01
  [ Changes made by Joost van Baal-Ilić ]
  * config.tex, francaise.tex: make text fit on page
