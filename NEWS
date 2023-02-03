@@ -2,8 +2,41 @@ debian-flyers/general NEWS file
 
 Run "make ChangeLog" to see detailed per-file info.
 
+- Changes made 2019-11
+ [ Changes made by Alban VIDAL ]
+ * hexagonal-sticker/src/hexagonal-*.svg: Update broken symlinks -
+   Thanks Jean-Marc
+
+
+- Changes made 2019-10
+ [ Changes made by Joost van Baal-Ilić ]
+ * TODO: there is more to do
+ * README.md: no longer suggest to build .ps output: these days we
+   want .pdf
+ * README-printing.md: README-printing.md: warning: content probably
+   obsolete
+
+
+- Changes made 2019-06 - 2019-07
+ [ Changes made by Alban "zordhak" VIDAL ]
+ * debian-flyers.pages.debian.net/index.html: Add link to PNG files
+   and set preview image to PNG files
+ * Add hexagonal in PNG format
+ * debian-flyers.pages.debian.net/files/{all,flyer_*}.ps: Update all
+   flyers
+ * dansk.tex, deutsch.tex, english.tex, espanyol.tex, francaise.tex,
+   italiano.tex, nederlands.tex, portugues.tex, svenska.tex: Update
+   number of packages (56,800)
+ [ Changes made by Joost van Baal-Ilić ]
+ * .gitlab-ci.yml, {debian.pages.debian.net|debian-flyers =>
+   pages.debian.net}: less ambitious name for directory: not
+   debian.pages.debian.net|debian-flyers but pages.debian.net. adjust
+   CI/CD script accordingly; more clearly
+   reflect our URL https://debian.pages.debian.net/debian-flyers/
+
+
 - Changes made 2019-06
- [ Laura Arjona Reina ]
+ [ Changes made by Laura Arjona Reina ]
  * debian-flyers.pages.debian.net/files/hexagonal-positive.svg:
    update hexagonal diversity sticker with the updated diversity logo
 
