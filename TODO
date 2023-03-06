@@ -3,7 +3,7 @@
 - sync list of programming langs w/ updated one in english.tex; maybe add:
   go, nodejs
 - add: usb (remove: cd?), cloud images?
-- mention ubuntu, nof children distros
+- mention ubuntu, not children distros
 
 - review english.tex; use e.g. a blurb from sponsorship flyer as published by
   debconf organisers to explain what debian is about.  do not assume reader
