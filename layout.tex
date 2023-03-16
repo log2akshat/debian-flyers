@@ -59,6 +59,11 @@
 
 \raggedleft
 
+\def\DownloadLinkQRCode{%
+\hspace*{0.2\Separation}\null
+  \lower8.5pt\hbox{\includegraphics[keepaspectratio=true]{\DownloadDebian}}
+}
+
 % a tiny minipage for the background swirl
 \begin{minipage}{.01\textwidth}
 %\MyRCS
@@ -112,6 +117,8 @@
 \Descriptionsymbol\ContinuityCaption] \Continuity
 \Descriptionsymbol\SecurityCaption] \Security
 \Descriptionsymbol\QualityCaption] \Quality
+%\Descriptionsymbol\DownloadCaption] \DownloadDebian \linebreak \DownloadLinkQRCode
+
 \end{description}
 %
 \end{minipage}

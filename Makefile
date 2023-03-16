@@ -102,6 +102,8 @@ cmyk600pdf: cmyk600
 sponsors/murphy.eps:
 	cd sponsors; wget http://www.murphy.nl/picts/logo_new_top64.gif; convert logo_new_top64.gif murphy.eps
 
+export TEXINPUTS=./qrcodes:
+
 #
 # housekeeping targets
 #
